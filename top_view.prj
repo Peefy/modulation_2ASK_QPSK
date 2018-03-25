@@ -1,0 +1,8 @@
+verilog work "ipcore_dir/ip_chirp_data_rom.v"
+verilog work "ipcore_dir/ip_sin_cos.v"
+verilog work "delay_clk_div_50k.v"
+verilog work "da2.v"
+verilog work "ClkSpliterN.v"
+verilog work "chirp.v"
+verilog work "ad.v"
+verilog work "top_view.v"

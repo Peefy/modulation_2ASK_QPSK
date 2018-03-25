@@ -1,0 +1,228 @@
+iMPACT Version: 14.7
+
+iMPACT log file Started on Fri Jan 19 17:20:11 2018
+
+Welcome to iMPACT
+iMPACT Version: 14.7
+Project: '\auto_project.ipf' already exists.
+Original project has been renamed to '\auto_project_1.ipf'.
+Project: \auto_project.ipf created.
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.4.4
+INFO:iMPACT - Digilent Plugin: found 1 device(s).
+INFO:iMPACT - Digilent Plugin: opening device: "JtagHs1", SN:210512180081
+INFO:iMPACT - Digilent Plugin: User Name: JtagHs1
+INFO:iMPACT - Digilent Plugin: Product Name: Digilent JTAG-HS1
+INFO:iMPACT - Digilent Plugin: Serial Number: 210512180081
+INFO:iMPACT - Digilent Plugin: Product ID: 30900152
+INFO:iMPACT - Digilent Plugin: Firmware Version: 0108
+INFO:iMPACT - Digilent Plugin: JTAG Port Number: 0
+INFO:iMPACT - Digilent Plugin: JTAG Clock Frequency: 10000000 Hz
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: 2018/1/19 星期五 17:20:14
+// *** BATCH CMD : Identify -inferir 
+PROGRESS_START - Starting Operation.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc6slx9, Version : 2
+INFO:iMPACT:1777 - 
+   Reading E:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/xc6slx9.bsd...
+INFO:iMPACT:501 - '1': Added Device xc6slx9 successfully.
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 1 -file"E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.bit"
+'1': Loading file 'E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.bit'...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 1.
+INFO:iMPACT:501 - '1': Added Device xc6slx9 successfully.
+----------------------------------------------------------------------
+Project: '\auto_project.ipf' created.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : saveProjectFile -file "\auto_project.ipf"
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+Welcome to iMPACT
+iMPACT Version: 14.7
+Project: '\auto_project.ipf' already exists.
+Original project has been renamed to '\auto_project_1.ipf'.
+Project: \auto_project.ipf created.
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addConfigDevice  -name "duGu" -path"E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK"
+// *** BATCH CMD : setSubmode -pffspi
+// *** BATCH CMD : setAttribute -configdevice -attr multibootBpiType -value ""
+// *** BATCH CMD : addDesign -version 0 -name "0"
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addDeviceChain -index 0
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addDeviceChain -index 0
+Override chain at index 0.
+Overriding chain at index 0.
+// *** BATCH CMD : setAttribute -configdevice -attr compressed -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr autoSize -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr fileFormat -value "mcs"
+// *** BATCH CMD : setAttribute -configdevice -attr fillValue -value "FF"
+// *** BATCH CMD : setAttribute -configdevice -attr swapBit -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr dir -value "UP"
+// *** BATCH CMD : setAttribute -configdevice -attr multiboot -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr spiSelected -value "TRUE"
+// *** BATCH CMD : addPromDevice -p 1 -size 2048 -name 2M
+'1': Added Device 2M successfully.
+----------------------------------------------------------------------
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addDeviceChain -index 0
+Override chain at index 0.
+Overriding chain at index 0.
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addDeviceChain -index 0
+Override chain at index 0.
+Overriding chain at index 0.
+// *** BATCH CMD : setSubmode -pffspi
+// *** BATCH CMD : setMode -pff
+------------------------  GUI: Wizard Data Report  ---------------------------
+      Compression : false
+      Fill Value : FF
+      Output Format : mcs
+      Swap Bits : false
+      LoadDirection : UP
+      PROM Basename : duGu
+      File Location : E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK/
+      Auto Select : false
+      Number of Revisions : 1
+      Number of PROMs : 1
+      PROM Name : 2M   PROM Size : 2097152 bits
+-------------------------- END of Report ----------------------------
+// *** BATCH CMD : setAttribute -design -attr name -value "0000"
+// *** BATCH CMD : addDevice -p 1 -file"E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.bit"
+'1': Loading file 'E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.bit'...
+INFO:iMPACT - Elapsed time =      0 sec.
+done.
+INFO:iMPACT:501 - '1': Added Device xc6slx9 successfully.
+----------------------------------------------------------------------
+Add one device.534edINFO:iMPACT - Current time: 2018/1/19 星期五 17:20:54
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffspi
+Total configuration bit size = 2729280  bits.
+Total configuration byte size = 341160 bytes.
+// *** BATCH CMD : generate
+0x534a8 (341160) bytes loaded up from 0x0
+Using user-specified prom size of 2048K
+Writing file "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\duGu.mcs".
+Writing file "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\duGu.prm".
+Writing file "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\duGu.cfi".
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : setMode -bs
+ERROR:iMPACT - Failed to add PROM device!
+// *** BATCH CMD : addDevice -p 1 -file"E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.bit"
+'1': Loading file 'E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.bit'...
+done.
+INFO:iMPACT:1777 - 
+   Reading E:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/xc6slx9.bsd...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 1.
+INFO:iMPACT:501 - '1': Added Device xc6slx9 successfully.
+----------------------------------------------------------------------
+Selected part: M25P16
+// *** BATCH CMD : attachflash -position 1 -spi "M25P16"
+Unprotect sectors: FALSE
+// *** BATCH CMD : assignfiletoattachedflash -position 1 -file"E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/duGu.mcs"
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.4.4
+INFO:iMPACT - Digilent Plugin: found 1 device(s).
+INFO:iMPACT - Digilent Plugin: opening device: "JtagHs1", SN:210512180081
+INFO:iMPACT - Digilent Plugin: User Name: JtagHs1
+INFO:iMPACT - Digilent Plugin: Product Name: Digilent JTAG-HS1
+INFO:iMPACT - Digilent Plugin: Serial Number: 210512180081
+INFO:iMPACT - Digilent Plugin: Product ID: 30900152
+INFO:iMPACT - Digilent Plugin: Firmware Version: 0108
+INFO:iMPACT - Digilent Plugin: JTAG Port Number: 0
+INFO:iMPACT - Digilent Plugin: JTAG Clock Frequency: 10000000 Hz
+INFO:iMPACT - Current time: 2018/1/19 星期五 17:21:32
+// *** BATCH CMD : Program -p 1 -dataWidth 1 -spionly -e -v -loadfpga 
+Maximum TCK operating frequency for this device chain: 25000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': SPI access core not detected. SPI access core will be downloaded to thedevice to enable operations.
+INFO:iMPACT - Downloading core file   E:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/xc6slx9_spi.cor.
+PROGRESS_START - Starting Operation.
+'1': Downloading core...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:2492 - '1': Completed downloading core to device.
+'1': IDCODE is '202015' (in hex).
+'1': ID Check passed.
+'1': IDCODE is '202015' (in hex).
+'1': ID Check passed.
+'1': Erasing Device.
+'1': Using Sector Erase.
+'1': Programming Flash.
+'1': Reading device contents...
+done.
+'1': Verification completed.
+'1':Programming in x1 mode.
+'1': Programmed successfully.
+INFO:iMPACT - '1': Flash was programmed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     18 sec.
+Project: '\auto_project.ipf' created.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : saveProjectFile -file "\auto_project.ipf"
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -pff
+INFO:iMPACT - Launching WebTalk, please refer to the webtalk log at /webtalk.log   for details.
+INFO:iMPACT - Running wbtc successfully.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : deletePromDevice -position 1
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : deleteDesign -version 0
+// *** BATCH CMD : setCurrentDesign -version -1

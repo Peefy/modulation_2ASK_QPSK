@@ -1,0 +1,15 @@
+Storage Target: SPI Flash Single FPGA
+16M
+FF
+duGu
+E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK
+
+MCS
+No
+
+No
+
+os\Xilinx\Spartan6\dugu_2ASK/
+
+MCS
+No

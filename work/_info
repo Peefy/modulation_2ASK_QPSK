@@ -1,0 +1,211 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK
+vad
+Z1 !s110 1509806606
+!i10b 1
+!s100 ]XERBB:Q`7gQTMF^U0NOZ2
+I;X`OB8RVlD<hX]TllY`X<2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1508941256
+8ad.v
+Fad.v
+L0 3
+Z3 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1509806606.853000
+!s107 ad.v|
+!s90 -reportprogress|300|ad.v|
+!i113 1
+Z4 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vclk_div_100k
+!s110 1509777811
+!i10b 1
+!s100 :IbFgLagfbUD@i1?QBSK00
+IPhh@m`d@M3dEF>R;PkEQJ1
+R2
+R0
+w1509777595
+8clk_div_100k.v
+Fclk_div_100k.v
+Z5 L0 21
+R3
+r1
+!s85 0
+31
+!s108 1509777811.410000
+!s107 clk_div_100k.v|
+!s90 -reportprogress|300|clk_div_100k.v|
+!i113 1
+R4
+vClkSpliterN
+R1
+!i10b 1
+!s100 kiMZkD`g6BN62K=VN:Vai3
+I_jdi0@cdDJH2i1425nPd43
+R2
+R0
+w1509774225
+8ClkSpliterN.v
+FClkSpliterN.v
+R5
+R3
+r1
+!s85 0
+31
+!s108 1509806606.763000
+!s107 ClkSpliterN.v|
+!s90 -reportprogress|300|ClkSpliterN.v|
+!i113 1
+R4
+n@clk@spliter@n
+vda
+R1
+!i10b 1
+!s100 <[A23AFeC0Vi5l]@nTS;F2
+I^:41cCHMYMHj`dI_IRE1D3
+R2
+R0
+w1509003876
+8da.v
+Fda.v
+R5
+R3
+r1
+!s85 0
+31
+!s108 1509806606.678000
+!s107 da.v|
+!s90 -reportprogress|300|da.v|
+!i113 1
+R4
+vdelay_clk_div_50k
+R1
+!i10b 1
+!s100 _IF9WDRA?^lR=7EzEhlA60
+I3aX9HbQUjI4<^:E5QXf072
+R2
+R0
+w1509806579
+8delay_clk_div_50k.v
+Fdelay_clk_div_50k.v
+R5
+R3
+r1
+!s85 0
+31
+!s108 1509806606.553000
+!s107 delay_clk_div_50k.v|
+!s90 -reportprogress|300|delay_clk_div_50k.v|
+!i113 1
+R4
+vglbl
+Z6 !s110 1509806607
+!i10b 1
+!s100 UlJ]9LUWO:ZWoRO62F9fW3
+IMQ6b3^dC^07WWKdR2KMMD2
+R2
+R0
+w1381681120
+8E:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+FE:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+L0 5
+R3
+r1
+!s85 0
+31
+!s108 1509806607.120000
+!s107 E:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!s90 -reportprogress|300|E:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!i113 1
+R4
+vip_multi
+!s110 1509774603
+!i10b 1
+!s100 JHAVned@>ZA9^[@CKSK]j1
+IaBPXR48CmD8X7RNleEURC1
+R2
+R0
+w1509772652
+8ipcore_dir/ip_multi.v
+Fipcore_dir/ip_multi.v
+Z7 L0 36
+R3
+r1
+!s85 0
+31
+!s108 1509774603.685000
+!s107 ipcore_dir/ip_multi.v|
+!s90 -reportprogress|300|ipcore_dir/ip_multi.v|
+!i113 1
+R4
+vip_sin_cos
+R1
+!i10b 1
+!s100 n3Az;7_KFZcQECBMhhe4T2
+Ig<KiWBYJbHg7IMPC<FK=n2
+R2
+R0
+w1509802131
+8ipcore_dir/ip_sin_cos.v
+Fipcore_dir/ip_sin_cos.v
+R7
+R3
+r1
+!s85 0
+31
+!s108 1509806606.392000
+!s107 ipcore_dir/ip_sin_cos.v|
+!s90 -reportprogress|300|ipcore_dir/ip_sin_cos.v|
+!i113 1
+R4
+vtop_view
+R1
+!i10b 1
+!s100 l0ZRJJY_:4>UZIaXhP4z]2
+I9G>EU>9HM1LP22dh^5`1O2
+R2
+R0
+w1509806520
+8top_view.v
+Ftop_view.v
+L0 4
+R3
+r1
+!s85 0
+31
+!s108 1509806606.942000
+!s107 top_view.v|
+!s90 -reportprogress|300|top_view.v|
+!i113 1
+R4
+vtop_view_test
+R6
+!i10b 1
+!s100 dX]1QBAKbSf1adON6I60N0
+IPQfW28H8IVmGhB3R<gA7f2
+R2
+R0
+w1509794918
+8top_view_test.v
+Ftop_view_test.v
+L0 25
+R3
+r1
+!s85 0
+31
+!s108 1509806607.031000
+!s107 top_view_test.v|
+!s90 -reportprogress|300|top_view_test.v|
+!i113 1
+R4

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad1_in&lt;10&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad1_in&lt;11&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad2_in&lt;10&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad2_in&lt;11&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad1_in&lt;0&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad1_in&lt;1&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad1_in&lt;2&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad1_in&lt;3&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad1_in&lt;4&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad1_in&lt;5&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad1_in&lt;6&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad1_in&lt;7&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad1_in&lt;8&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad1_in&lt;9&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad2_in&lt;0&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad2_in&lt;1&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad2_in&lt;2&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad2_in&lt;3&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad2_in&lt;4&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad2_in&lt;5&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad2_in&lt;6&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad2_in&lt;7&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad2_in&lt;8&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">ad2_in&lt;9&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="ParHelpers" num="361" delta="old" >There are <arg fmt="%d" index="1">24</arg> loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+</msg>
+
+<msg type="warning" file="Par" num="283" delta="old" >There are <arg fmt="%d" index="1">24</arg> loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+</msg>
+
+</messages>
+

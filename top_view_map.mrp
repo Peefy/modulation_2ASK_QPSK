@@ -1,0 +1,1854 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Mapping Report File for Design 'top_view'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o top_view_map.ncd top_view.ngd top_view.pcf 
+Target Device  : xc6slx9
+Target Package : ftg256
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Fri Jan 19 17:13:59 2018
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    4
+Slice Logic Utilization:
+  Number of Slice Registers:                   204 out of  11,440    1%
+    Number used as Flip Flops:                 204
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        193 out of   5,720    3%
+    Number used as logic:                      163 out of   5,720    2%
+      Number using O6 output only:              82
+      Number using O5 output only:              17
+      Number using O5 and O6:                   64
+      Number used as ROM:                        0
+    Number used as Memory:                       9 out of   1,440    1%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:             9
+        Number using O6 output only:             3
+        Number using O5 output only:             0
+        Number using O5 and O6:                  6
+    Number used exclusively as route-thrus:     21
+      Number with same-slice register load:      2
+      Number with same-slice carry load:        19
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                    74 out of   1,430    5%
+  Number of MUXCYs used:                       128 out of   2,860    4%
+  Number of LUT Flip Flop pairs used:          235
+    Number with an unused Flip Flop:            74 out of     235   31%
+    Number with an unused LUT:                  42 out of     235   17%
+    Number of fully used LUT-FF pairs:         119 out of     235   50%
+    Number of unique control sets:               9
+    Number of slice register sites lost
+      to control set restrictions:              29 out of  11,440    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        61 out of     186   32%
+    Number of LOCed IOBs:                       61 out of      61  100%
+    IOB Flip Flops:                              1
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         3 out of      32    9%
+  Number of RAMB8BWERs:                          2 out of      64    3%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       1 out of      16    6%
+    Number used as BUFGs:                        1
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     200    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     200    0%
+  Number of OLOGIC2/OSERDES2s:                   1 out of     200    1%
+    Number used as OLOGIC2s:                     1
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      16    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                2.64
+
+Peak Memory Usage:  274 MB
+Total REAL time to MAP completion:  7 secs 
+Total CPU time to MAP completion:   7 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net clk_div_50k/add_del_clkout
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net delay_50k_two/reg_clk50k is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net delay_50k/reg_clk50k is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:54 - 'xc6slx9' is a WebPack part.
+INFO:LIT:243 - Logical network ad1_in<11>_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 123 more times for the
+   following (max. 5 shown):
+   ad1_in<10>_IBUF,
+   ad1_in<9>_IBUF,
+   ad1_in<8>_IBUF,
+   ad1_in<7>_IBUF,
+   ad1_in<6>_IBUF
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 640 block(s) removed
+  25 block(s) optimized away
+ 677 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal
+"sin_cos_500K/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_card
+inal_sin_ms/opt_has_pipe.first_q<6>" is sourceless and has been removed.
+The signal
+"sin_cos_500K/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_card
+inal_sin_ms/opt_has_pipe.first_q<5>" is sourceless and has been removed.
+The signal
+"sin_cos_500K/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_card
+inal_sin_ms/opt_has_pipe.first_q<4>" is sourceless and has been removed.
+The signal
+"sin_cos_500K/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_card
+inal_sin_ms/opt_has_pipe.first_q<3>" is sourceless and has been removed.
+The signal
+"sin_cos_500K/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_card
+inal_sin_ms/opt_has_pipe.first_q<2>" is sourceless and has been removed.
+The signal
+"sin_cos_500K/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_card
+inal_sin_ms/opt_has_pipe.first_q<1>" is sourceless and has been removed.
+The signal
+"sin_cos_500K/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_card
+inal_sin_ms/opt_has_pipe.first_q<0>" is sourceless and has been removed.
+The signal
+"sin_cos_500K/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_card
+inal_sin_ls/opt_has_pipe.first_q<6>" is sourceless and has been removed.
+The signal
+"sin_cos_500K/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_card
+inal_sin_ls/opt_has_pipe.first_q<5>" is sourceless and has been removed.
+The signal
+"sin_cos_500K/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_card
+inal_sin_ls/opt_has_pipe.first_q<4>" is sourceless and has been removed.
+The signal
+"sin_cos_500K/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_card
+inal_sin_ls/opt_has_pipe.first_q<3>" is sourceless and has been removed.
+The signal
+"sin_cos_500K/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_card
+inal_sin_ls/opt_has_pipe.first_q<2>" is sourceless and has been removed.
+The signal
+"sin_cos_500K/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_card
+inal_sin_ls/opt_has_pipe.first_q<1>" is sourceless and has been removed.
+The signal
+"sin_cos_500K/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_card
+inal_sin_ls/opt_has_pipe.first_q<0>" is sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<26>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<25>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<24>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<23>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<22>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<21>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<20>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<19>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<18>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<17>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<16>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<15>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<14>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<13>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<12>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<11>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<10>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<9>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<8>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<7>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<6>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<5>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<4>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<3>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<2>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<1>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<0>" is
+sourceless and has been removed.
+The signal "sin_cos_500K/sig0000001e" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk0000001e" (FF) removed.
+  The signal "sin_cos_500K/sig00000055" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000070" is sourceless and has been removed.
+The signal "sin_cos_500K/sig0000006f" is sourceless and has been removed.
+The signal "sin_cos_500K/sig0000006e" is sourceless and has been removed.
+The signal "sin_cos_500K/sig0000006d" is sourceless and has been removed.
+The signal "sin_cos_500K/sig0000006c" is sourceless and has been removed.
+The signal "sin_cos_500K/sig0000006b" is sourceless and has been removed.
+The signal "sin_cos_500K/sig0000006a" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000069" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000068" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000067" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000066" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000065" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000064" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000063" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000062" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000061" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000060" is sourceless and has been removed.
+The signal "sin_cos_500K/sig0000005f" is sourceless and has been removed.
+The signal "sin_cos_500K/sig0000005e" is sourceless and has been removed.
+The signal "sin_cos_500K/sig0000005d" is sourceless and has been removed.
+The signal "sin_cos_500K/sig0000005c" is sourceless and has been removed.
+The signal "sin_cos_500K/sig0000005b" is sourceless and has been removed.
+The signal "sin_cos_500K/sig0000005a" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000059" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000058" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000057" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000056" is sourceless and has been removed.
+The signal "sin_cos_500K/sig0000007d" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000000b7" (XOR) removed.
+  The signal "sin_cos_500K/sig0000009e" is sourceless and has been removed.
+   Sourceless block "sin_cos_500K/blk00000113" (FF) removed.
+    The signal "sin_cos_500K/sig00000117" is sourceless and has been removed.
+     Sourceless block "sin_cos_500K/blk000000e0" (FF) removed.
+ Sourceless block "sin_cos_500K/blk000000b8" (MUX) removed.
+  The signal "sin_cos_500K/sig0000007c" is sourceless and has been removed.
+   Sourceless block "sin_cos_500K/blk00000112" (FF) removed.
+    The signal "sin_cos_500K/sig00000118" is sourceless and has been removed.
+     Sourceless block "sin_cos_500K/blk00000145" (ROM) removed.
+      The signal "sin_cos_500K/sig00000072" is sourceless and has been removed.
+       Sourceless block "sin_cos_500K/blk000000d3" (FF) removed.
+     Sourceless block "sin_cos_500K/blk00000146" (ROM) removed.
+      The signal "sin_cos_500K/sig000000b2" is sourceless and has been removed.
+       Sourceless block "sin_cos_500K/blk000000d4" (FF) removed.
+     Sourceless block "sin_cos_500K/blk00000147" (ROM) removed.
+      The signal "sin_cos_500K/sig000000b3" is sourceless and has been removed.
+       Sourceless block "sin_cos_500K/blk000000d5" (FF) removed.
+     Sourceless block "sin_cos_500K/blk00000148" (ROM) removed.
+      The signal "sin_cos_500K/sig000000b4" is sourceless and has been removed.
+       Sourceless block "sin_cos_500K/blk000000d6" (FF) removed.
+     Sourceless block "sin_cos_500K/blk00000149" (ROM) removed.
+      The signal "sin_cos_500K/sig000000b5" is sourceless and has been removed.
+       Sourceless block "sin_cos_500K/blk000000d7" (FF) removed.
+     Sourceless block "sin_cos_500K/blk0000015b" (ROM) removed.
+      The signal "sin_cos_500K/sig000000b7" is sourceless and has been removed.
+       Sourceless block "sin_cos_500K/blk000000d9" (FF) removed.
+     Sourceless block "sin_cos_500K/blk0000015d" (ROM) removed.
+      The signal "sin_cos_500K/sig000000b6" is sourceless and has been removed.
+       Sourceless block "sin_cos_500K/blk000000d8" (FF) removed.
+The signal "sin_cos_500K/sig000000a4" is sourceless and has been removed.
+The signal "sin_cos_500K/sig0000007e" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000000b9" (XOR) removed.
+  The signal "sin_cos_500K/sig0000009d" is sourceless and has been removed.
+   Sourceless block "sin_cos_500K/blk00000114" (FF) removed.
+    The signal "sin_cos_500K/sig00000116" is sourceless and has been removed.
+     Sourceless block "sin_cos_500K/blk000000df" (FF) removed.
+ Sourceless block "sin_cos_500K/blk000000ba" (MUX) removed.
+The signal "sin_cos_500K/sig000000a3" is sourceless and has been removed.
+The signal "sin_cos_500K/sig0000007f" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000000bb" (XOR) removed.
+  The signal "sin_cos_500K/sig0000009c" is sourceless and has been removed.
+   Sourceless block "sin_cos_500K/blk00000115" (FF) removed.
+    The signal "sin_cos_500K/sig00000115" is sourceless and has been removed.
+     Sourceless block "sin_cos_500K/blk000000de" (FF) removed.
+ Sourceless block "sin_cos_500K/blk000000bc" (MUX) removed.
+The signal "sin_cos_500K/sig000000a2" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000080" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000000bd" (XOR) removed.
+  The signal "sin_cos_500K/sig0000009b" is sourceless and has been removed.
+   Sourceless block "sin_cos_500K/blk00000116" (FF) removed.
+    The signal "sin_cos_500K/sig00000114" is sourceless and has been removed.
+     Sourceless block "sin_cos_500K/blk000000dd" (FF) removed.
+ Sourceless block "sin_cos_500K/blk000000be" (MUX) removed.
+The signal "sin_cos_500K/sig000000a1" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000081" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000000bf" (XOR) removed.
+  The signal "sin_cos_500K/sig0000009a" is sourceless and has been removed.
+   Sourceless block "sin_cos_500K/blk00000117" (FF) removed.
+    The signal "sin_cos_500K/sig00000113" is sourceless and has been removed.
+     Sourceless block "sin_cos_500K/blk000000dc" (FF) removed.
+ Sourceless block "sin_cos_500K/blk000000c0" (MUX) removed.
+The signal "sin_cos_500K/sig000000a0" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000082" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000000c1" (XOR) removed.
+  The signal "sin_cos_500K/sig00000099" is sourceless and has been removed.
+   Sourceless block "sin_cos_500K/blk00000118" (FF) removed.
+    The signal "sin_cos_500K/sig00000112" is sourceless and has been removed.
+     Sourceless block "sin_cos_500K/blk000000db" (FF) removed.
+ Sourceless block "sin_cos_500K/blk000000c2" (MUX) removed.
+The signal "sin_cos_500K/sig0000009f" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000142" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000000c3" (XOR) removed.
+  The signal "sin_cos_500K/sig00000098" is sourceless and has been removed.
+   Sourceless block "sin_cos_500K/blk00000119" (FF) removed.
+    The signal "sin_cos_500K/sig00000111" is sourceless and has been removed.
+     Sourceless block "sin_cos_500K/blk000000da" (FF) removed.
+ Sourceless block "sin_cos_500K/blk000000c4" (MUX) removed.
+The signal "sin_cos_500K/sig000000a5" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000000c5" (FF) removed.
+  The signal "sin_cos_500K/sig00000119" is sourceless and has been removed.
+The signal "sin_cos_500K/sig000000a6" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000000c6" (FF) removed.
+  The signal "sin_cos_500K/sig0000011a" is sourceless and has been removed.
+   Sourceless block "sin_cos_500K/blk0000015a" (ROM) removed.
+    The signal "sin_cos_500K/sig00000140" is sourceless and has been removed.
+   Sourceless block "sin_cos_500K/blk0000015c" (ROM) removed.
+    The signal "sin_cos_500K/sig00000141" is sourceless and has been removed.
+The signal "sin_cos_500K/sig000000a7" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000000c7" (FF) removed.
+  The signal "sin_cos_500K/sig0000011b" is sourceless and has been removed.
+The signal "sin_cos_500K/sig000000a8" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000000c8" (FF) removed.
+  The signal "sin_cos_500K/sig0000011c" is sourceless and has been removed.
+The signal "sin_cos_500K/sig000000a9" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000000c9" (FF) removed.
+  The signal "sin_cos_500K/sig0000011d" is sourceless and has been removed.
+The signal "sin_cos_500K/sig000000aa" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000000ca" (FF) removed.
+  The signal "sin_cos_500K/sig0000011e" is sourceless and has been removed.
+The signal "sin_cos_500K/sig0000011f" is sourceless and has been removed.
+The signal "sin_cos_500K/sig0000012e" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk0000014a" (ROM) removed.
+The signal "sin_cos_500K/sig0000012f" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk0000014b" (ROM) removed.
+The signal "sin_cos_500K/sig00000130" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk0000014c" (ROM) removed.
+The signal "sin_cos_500K/sig00000131" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk0000014d" (ROM) removed.
+The signal "sin_cos_500K/sig00000132" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk0000014e" (ROM) removed.
+The signal "sin_cos_500K/sig00000133" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk0000014f" (ROM) removed.
+The signal "sin_cos_500K/sig00000134" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000150" (ROM) removed.
+The signal "sin_cos_500K/sig00000135" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000151" (ROM) removed.
+The signal "sin_cos_500K/sig00000136" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000152" (ROM) removed.
+The signal "sin_cos_500K/sig00000137" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000153" (ROM) removed.
+The signal "sin_cos_500K/sig00000138" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000154" (ROM) removed.
+The signal "sin_cos_500K/sig00000139" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000155" (ROM) removed.
+The signal "sin_cos_500K/sig0000012d" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk0000015f" (ROM) removed.
+The signal "sin_cos_500K/sig000000f5" is sourceless and has been removed.
+The signal "sin_cos_500K/sig000000f4" is sourceless and has been removed.
+The signal "sin_cos_500K/sig000000f3" is sourceless and has been removed.
+The signal "sin_cos_500K/sig000000f2" is sourceless and has been removed.
+The signal "sin_cos_500K/sig000000f1" is sourceless and has been removed.
+The signal "sin_cos_500K/sig000000f0" is sourceless and has been removed.
+The signal "sin_cos_500K/sig000000ef" is sourceless and has been removed.
+The signal "sin_cos_500K/sig000000ee" is sourceless and has been removed.
+The signal "sin_cos_500K/sig000000ed" is sourceless and has been removed.
+The signal "sin_cos_500K/sig000000ec" is sourceless and has been removed.
+The signal "sin_cos_500K/sig000000eb" is sourceless and has been removed.
+The signal "sin_cos_500K/sig000000ea" is sourceless and has been removed.
+The signal "sin_cos_500K/sig000000e9" is sourceless and has been removed.
+The signal "sin_cos_500K/sig00000145" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000167" (FF) removed.
+The signal "sin_cos_500K/sig00000146" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000169" (FF) removed.
+The signal "sin_cos_500K/sig00000147" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk0000016b" (FF) removed.
+The signal "sin_cos_500K/sig00000148" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk0000016d" (FF) removed.
+The signal "sin_cos_500K/sig00000149" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk0000016f" (FF) removed.
+The signal "sin_cos_500K/sig0000014a" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000171" (FF) removed.
+The signal "sin_cos_500K/sig0000014b" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000173" (FF) removed.
+The signal "sin_cos_500K/sig0000014c" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000175" (FF) removed.
+The signal "sin_cos_500K/sig0000014d" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000177" (FF) removed.
+The signal "sin_cos_500K/sig0000014e" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000179" (FF) removed.
+The signal "sin_cos_500K/sig0000014f" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk0000017b" (FF) removed.
+The signal "sin_cos_500K/sig00000150" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk0000017d" (FF) removed.
+The signal "sin_cos_500K/sig00000151" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk0000017f" (FF) removed.
+The signal "sin_cos_500K/sig00000152" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000181" (FF) removed.
+The signal "sin_cos_500K/sig00000153" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000183" (FF) removed.
+The signal "sin_cos_500K/sig00000154" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000185" (FF) removed.
+The signal "sin_cos_500K/sig00000155" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000187" (FF) removed.
+The signal "sin_cos_500K/sig00000156" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000189" (FF) removed.
+The signal "sin_cos_500K/sig00000157" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk0000018b" (FF) removed.
+The signal "sin_cos_500K/sig00000158" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk0000018d" (FF) removed.
+The signal "sin_cos_500K/sig00000159" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk0000018f" (FF) removed.
+The signal "sin_cos_500K/sig0000015a" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000191" (FF) removed.
+The signal "sin_cos_500K/sig0000015b" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000193" (FF) removed.
+The signal "sin_cos_500K/sig0000015c" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000195" (FF) removed.
+The signal "sin_cos_500K/sig0000015d" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk00000197" (FF) removed.
+The signal "sin_cos_500K/sig0000015f" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk0000019b" (FF) removed.
+The signal "sin_cos_500K/sig00000160" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk0000019d" (FF) removed.
+The signal "sin_cos_500K/sig0000016f" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000001bb" (FF) removed.
+The signal "sin_cos_500K/sig00000170" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000001bd" (FF) removed.
+The signal "sin_cos_500K/sig00000171" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000001bf" (FF) removed.
+The signal "sin_cos_500K/sig00000172" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000001c1" (FF) removed.
+The signal "sin_cos_500K/sig00000173" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000001c3" (FF) removed.
+The signal "sin_cos_500K/sig00000174" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000001c5" (FF) removed.
+The signal "sin_cos_500K/sig00000175" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000001c7" (FF) removed.
+The signal "sin_cos_500K/sig00000176" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000001c9" (FF) removed.
+The signal "sin_cos_500K/sig00000177" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000001cb" (FF) removed.
+The signal "sin_cos_500K/sig00000178" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000001cd" (FF) removed.
+The signal "sin_cos_500K/sig00000179" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000001cf" (FF) removed.
+The signal "sin_cos_500K/sig0000017a" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000001d1" (FF) removed.
+The signal "sin_cos_500K/sig0000017b" is sourceless and has been removed.
+ Sourceless block "sin_cos_500K/blk000001d3" (FF) removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_cos_ms/opt_has_pipe.first_q<6>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_cos_ms/opt_has_pipe.first_q<5>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_cos_ms/opt_has_pipe.first_q<4>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_cos_ms/opt_has_pipe.first_q<3>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_cos_ms/opt_has_pipe.first_q<2>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_cos_ms/opt_has_pipe.first_q<1>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_cos_ms/opt_has_pipe.first_q<0>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_cos_ls/opt_has_pipe.first_q<6>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_cos_ls/opt_has_pipe.first_q<5>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_cos_ls/opt_has_pipe.first_q<4>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_cos_ls/opt_has_pipe.first_q<3>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_cos_ls/opt_has_pipe.first_q<2>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_cos_ls/opt_has_pipe.first_q<1>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_cos_ls/opt_has_pipe.first_q<0>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_sin_ms/opt_has_pipe.first_q<6>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_sin_ms/opt_has_pipe.first_q<5>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_sin_ms/opt_has_pipe.first_q<4>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_sin_ms/opt_has_pipe.first_q<3>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_sin_ms/opt_has_pipe.first_q<2>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_sin_ms/opt_has_pipe.first_q<1>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_sin_ms/opt_has_pipe.first_q<0>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_sin_ls/opt_has_pipe.first_q<6>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_sin_ls/opt_has_pipe.first_q<5>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_sin_ls/opt_has_pipe.first_q<4>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_sin_ls/opt_has_pipe.first_q<3>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_sin_ls/opt_has_pipe.first_q<2>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_sin_ls/opt_has_pipe.first_q<1>" is sourceless and has been removed.
+The signal
+"sin_cos_1M/U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardin
+al_sin_ls/opt_has_pipe.first_q<0>" is sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<26>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<25>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<24>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<23>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<22>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<21>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<20>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<19>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<18>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<17>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<16>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<15>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<14>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<13>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<12>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<11>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<10>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<9>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<8>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<7>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<6>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<5>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<4>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<3>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<2>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<1>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<0>" is
+sourceless and has been removed.
+The signal "sin_cos_1M/sig00000001" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000000b6" (MUX) removed.
+  The signal "sin_cos_1M/sig0000007a" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk000000b4" (XOR) removed.
+    The signal "sin_cos_1M/sig00000083" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000111" (FF) removed.
+      The signal "sin_cos_1M/sig00000102" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk000000e8" (FF) removed.
+   Sourceless block "sin_cos_1M/blk000000b5" (MUX) removed.
+    The signal "sin_cos_1M/sig00000079" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk000000b2" (XOR) removed.
+      The signal "sin_cos_1M/sig00000084" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000110" (FF) removed.
+        The signal "sin_cos_1M/sig00000103" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000e9" (FF) removed.
+     Sourceless block "sin_cos_1M/blk000000b3" (MUX) removed.
+      The signal "sin_cos_1M/sig00000078" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk000000b0" (XOR) removed.
+        The signal "sin_cos_1M/sig00000085" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk0000010f" (FF) removed.
+          The signal "sin_cos_1M/sig00000104" is sourceless and has been removed.
+           Sourceless block "sin_cos_1M/blk000000ea" (FF) removed.
+       Sourceless block "sin_cos_1M/blk000000b1" (MUX) removed.
+        The signal "sin_cos_1M/sig00000077" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000ae" (XOR) removed.
+          The signal "sin_cos_1M/sig00000086" is sourceless and has been removed.
+           Sourceless block "sin_cos_1M/blk0000010e" (FF) removed.
+            The signal "sin_cos_1M/sig00000105" is sourceless and has been removed.
+             Sourceless block "sin_cos_1M/blk000000eb" (FF) removed.
+         Sourceless block "sin_cos_1M/blk000000af" (MUX) removed.
+          The signal "sin_cos_1M/sig00000076" is sourceless and has been removed.
+           Sourceless block "sin_cos_1M/blk000000ac" (XOR) removed.
+            The signal "sin_cos_1M/sig00000087" is sourceless and has been removed.
+             Sourceless block "sin_cos_1M/blk0000010d" (FF) removed.
+              The signal "sin_cos_1M/sig00000106" is sourceless and has been removed.
+               Sourceless block "sin_cos_1M/blk000000ec" (FF) removed.
+           Sourceless block "sin_cos_1M/blk000000ad" (MUX) removed.
+            The signal "sin_cos_1M/sig00000075" is sourceless and has been removed.
+             Sourceless block "sin_cos_1M/blk000000aa" (XOR) removed.
+              The signal "sin_cos_1M/sig00000088" is sourceless and has been removed.
+               Sourceless block "sin_cos_1M/blk0000010c" (FF) removed.
+                The signal "sin_cos_1M/sig00000107" is sourceless and has been removed.
+                 Sourceless block "sin_cos_1M/blk000000ed" (FF) removed.
+             Sourceless block "sin_cos_1M/blk000000ab" (MUX) removed.
+              The signal "sin_cos_1M/sig00000074" is sourceless and has been removed.
+               Sourceless block "sin_cos_1M/blk000000a8" (XOR) removed.
+                The signal "sin_cos_1M/sig00000089" is sourceless and has been removed.
+                 Sourceless block "sin_cos_1M/blk0000010b" (FF) removed.
+                  The signal "sin_cos_1M/sig00000108" is sourceless and has been removed.
+                   Sourceless block "sin_cos_1M/blk000000ee" (FF) removed.
+               Sourceless block "sin_cos_1M/blk000000a9" (MUX) removed.
+                The signal "sin_cos_1M/sig00000073" is sourceless and has been removed.
+                 Sourceless block "sin_cos_1M/blk0000010a" (FF) removed.
+                  The signal "sin_cos_1M/sig00000109" is sourceless and has been removed.
+                   Sourceless block "sin_cos_1M/blk00000140" (ROM) removed.
+                    The signal "sin_cos_1M/sig00000071" is sourceless and has been removed.
+                     Sourceless block "sin_cos_1M/blk000000e1" (FF) removed.
+                   Sourceless block "sin_cos_1M/blk00000141" (ROM) removed.
+                    The signal "sin_cos_1M/sig000000ac" is sourceless and has been removed.
+                     Sourceless block "sin_cos_1M/blk000000e2" (FF) removed.
+                   Sourceless block "sin_cos_1M/blk00000142" (ROM) removed.
+                    The signal "sin_cos_1M/sig000000ad" is sourceless and has been removed.
+                     Sourceless block "sin_cos_1M/blk000000e3" (FF) removed.
+                   Sourceless block "sin_cos_1M/blk00000143" (ROM) removed.
+                    The signal "sin_cos_1M/sig000000ae" is sourceless and has been removed.
+                     Sourceless block "sin_cos_1M/blk000000e4" (FF) removed.
+                   Sourceless block "sin_cos_1M/blk00000144" (ROM) removed.
+                    The signal "sin_cos_1M/sig000000af" is sourceless and has been removed.
+                     Sourceless block "sin_cos_1M/blk000000e5" (FF) removed.
+                   Sourceless block "sin_cos_1M/blk00000157" (ROM) removed.
+                    The signal "sin_cos_1M/sig000000b1" is sourceless and has been removed.
+                     Sourceless block "sin_cos_1M/blk000000e7" (FF) removed.
+                   Sourceless block "sin_cos_1M/blk00000159" (ROM) removed.
+                    The signal "sin_cos_1M/sig000000b0" is sourceless and has been removed.
+                     Sourceless block "sin_cos_1M/blk000000e6" (FF) removed.
+ Sourceless block "sin_cos_1M/blk00000167" (FF) removed.
+ Sourceless block "sin_cos_1M/blk00000169" (FF) removed.
+ Sourceless block "sin_cos_1M/blk0000016b" (FF) removed.
+ Sourceless block "sin_cos_1M/blk0000016d" (FF) removed.
+ Sourceless block "sin_cos_1M/blk0000016f" (FF) removed.
+ Sourceless block "sin_cos_1M/blk00000171" (FF) removed.
+ Sourceless block "sin_cos_1M/blk00000173" (FF) removed.
+ Sourceless block "sin_cos_1M/blk00000175" (FF) removed.
+ Sourceless block "sin_cos_1M/blk00000177" (FF) removed.
+ Sourceless block "sin_cos_1M/blk00000179" (FF) removed.
+ Sourceless block "sin_cos_1M/blk0000017b" (FF) removed.
+ Sourceless block "sin_cos_1M/blk0000017d" (FF) removed.
+ Sourceless block "sin_cos_1M/blk0000017f" (FF) removed.
+ Sourceless block "sin_cos_1M/blk00000181" (FF) removed.
+ Sourceless block "sin_cos_1M/blk00000183" (FF) removed.
+ Sourceless block "sin_cos_1M/blk00000185" (FF) removed.
+ Sourceless block "sin_cos_1M/blk00000187" (FF) removed.
+ Sourceless block "sin_cos_1M/blk00000189" (FF) removed.
+ Sourceless block "sin_cos_1M/blk0000018b" (FF) removed.
+ Sourceless block "sin_cos_1M/blk0000018d" (FF) removed.
+ Sourceless block "sin_cos_1M/blk0000018f" (FF) removed.
+ Sourceless block "sin_cos_1M/blk00000191" (FF) removed.
+ Sourceless block "sin_cos_1M/blk00000193" (FF) removed.
+ Sourceless block "sin_cos_1M/blk00000195" (FF) removed.
+ Sourceless block "sin_cos_1M/blk00000197" (FF) removed.
+ Sourceless block "sin_cos_1M/blk00000199" (FF) removed.
+  The signal "sin_cos_1M/sig0000013a" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk00000132" (ROM) removed.
+    The signal "sin_cos_1M/sig0000008a" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk00000133" (ROM) removed.
+    The signal "sin_cos_1M/sig0000008b" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk00000134" (ROM) removed.
+    The signal "sin_cos_1M/sig0000008c" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk00000135" (ROM) removed.
+    The signal "sin_cos_1M/sig0000008d" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk00000136" (ROM) removed.
+    The signal "sin_cos_1M/sig0000008e" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk00000137" (ROM) removed.
+    The signal "sin_cos_1M/sig0000008f" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk00000138" (ROM) removed.
+    The signal "sin_cos_1M/sig00000090" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk00000139" (ROM) removed.
+    The signal "sin_cos_1M/sig00000091" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk000000cc" (FF) removed.
+      The signal "sin_cos_1M/sig0000010a" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk0000013a" (ROM) removed.
+    The signal "sin_cos_1M/sig00000092" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk000000cd" (FF) removed.
+      The signal "sin_cos_1M/sig0000010b" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000156" (ROM) removed.
+        The signal "sin_cos_1M/sig0000013e" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000158" (ROM) removed.
+        The signal "sin_cos_1M/sig0000013f" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk0000013b" (ROM) removed.
+    The signal "sin_cos_1M/sig00000093" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk000000ce" (FF) removed.
+      The signal "sin_cos_1M/sig0000010c" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk0000013c" (ROM) removed.
+    The signal "sin_cos_1M/sig00000094" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk000000cf" (FF) removed.
+      The signal "sin_cos_1M/sig0000010d" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk0000013d" (ROM) removed.
+    The signal "sin_cos_1M/sig00000095" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk000000d0" (FF) removed.
+      The signal "sin_cos_1M/sig0000010e" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk0000013e" (ROM) removed.
+    The signal "sin_cos_1M/sig00000096" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk000000d1" (FF) removed.
+      The signal "sin_cos_1M/sig0000010f" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk0000013f" (ROM) removed.
+    The signal "sin_cos_1M/sig00000097" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk000000d2" (FF) removed.
+      The signal "sin_cos_1M/sig00000110" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk0000015e" (ROM) removed.
+    The signal "sin_cos_1M/sig0000007b" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000019b" (FF) removed.
+ Sourceless block "sin_cos_1M/blk0000019d" (FF) removed.
+ Sourceless block "sin_cos_1M/blk0000019f" (FF) removed.
+  The signal "sin_cos_1M/sig0000013b" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk00000107" (FF) removed.
+    The signal "sin_cos_1M/sig000000ab" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk000000c4" (MUX) removed.
+      The signal "sin_cos_1M/sig00000082" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk000000c1" (XOR) removed.
+        The signal "sin_cos_1M/sig00000099" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk00000118" (FF) removed.
+          The signal "sin_cos_1M/sig00000112" is sourceless and has been removed.
+           Sourceless block "sin_cos_1M/blk000000db" (FF) removed.
+       Sourceless block "sin_cos_1M/blk000000c2" (MUX) removed.
+        The signal "sin_cos_1M/sig00000081" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000bf" (XOR) removed.
+          The signal "sin_cos_1M/sig0000009a" is sourceless and has been removed.
+           Sourceless block "sin_cos_1M/blk00000117" (FF) removed.
+            The signal "sin_cos_1M/sig00000113" is sourceless and has been removed.
+             Sourceless block "sin_cos_1M/blk000000dc" (FF) removed.
+         Sourceless block "sin_cos_1M/blk000000c0" (MUX) removed.
+          The signal "sin_cos_1M/sig00000080" is sourceless and has been removed.
+           Sourceless block "sin_cos_1M/blk000000bd" (XOR) removed.
+            The signal "sin_cos_1M/sig0000009b" is sourceless and has been removed.
+             Sourceless block "sin_cos_1M/blk00000116" (FF) removed.
+              The signal "sin_cos_1M/sig00000114" is sourceless and has been removed.
+               Sourceless block "sin_cos_1M/blk000000dd" (FF) removed.
+           Sourceless block "sin_cos_1M/blk000000be" (MUX) removed.
+            The signal "sin_cos_1M/sig0000007f" is sourceless and has been removed.
+             Sourceless block "sin_cos_1M/blk000000bb" (XOR) removed.
+              The signal "sin_cos_1M/sig0000009c" is sourceless and has been removed.
+               Sourceless block "sin_cos_1M/blk00000115" (FF) removed.
+                The signal "sin_cos_1M/sig00000115" is sourceless and has been removed.
+                 Sourceless block "sin_cos_1M/blk000000de" (FF) removed.
+             Sourceless block "sin_cos_1M/blk000000bc" (MUX) removed.
+              The signal "sin_cos_1M/sig0000007e" is sourceless and has been removed.
+               Sourceless block "sin_cos_1M/blk000000b9" (XOR) removed.
+                The signal "sin_cos_1M/sig0000009d" is sourceless and has been removed.
+                 Sourceless block "sin_cos_1M/blk00000114" (FF) removed.
+                  The signal "sin_cos_1M/sig00000116" is sourceless and has been removed.
+                   Sourceless block "sin_cos_1M/blk000000df" (FF) removed.
+               Sourceless block "sin_cos_1M/blk000000ba" (MUX) removed.
+                The signal "sin_cos_1M/sig0000007d" is sourceless and has been removed.
+                 Sourceless block "sin_cos_1M/blk000000b7" (XOR) removed.
+                  The signal "sin_cos_1M/sig0000009e" is sourceless and has been removed.
+                   Sourceless block "sin_cos_1M/blk00000113" (FF) removed.
+                    The signal "sin_cos_1M/sig00000117" is sourceless and has been removed.
+                     Sourceless block "sin_cos_1M/blk000000e0" (FF) removed.
+                 Sourceless block "sin_cos_1M/blk000000b8" (MUX) removed.
+                  The signal "sin_cos_1M/sig0000007c" is sourceless and has been removed.
+                   Sourceless block "sin_cos_1M/blk00000112" (FF) removed.
+                    The signal "sin_cos_1M/sig00000118" is sourceless and has been removed.
+                     Sourceless block "sin_cos_1M/blk00000145" (ROM) removed.
+                      The signal "sin_cos_1M/sig00000072" is sourceless and has been removed.
+                       Sourceless block "sin_cos_1M/blk000000d3" (FF) removed.
+                     Sourceless block "sin_cos_1M/blk00000146" (ROM) removed.
+                      The signal "sin_cos_1M/sig000000b2" is sourceless and has been removed.
+                       Sourceless block "sin_cos_1M/blk000000d4" (FF) removed.
+                     Sourceless block "sin_cos_1M/blk00000147" (ROM) removed.
+                      The signal "sin_cos_1M/sig000000b3" is sourceless and has been removed.
+                       Sourceless block "sin_cos_1M/blk000000d5" (FF) removed.
+                     Sourceless block "sin_cos_1M/blk00000148" (ROM) removed.
+                      The signal "sin_cos_1M/sig000000b4" is sourceless and has been removed.
+                       Sourceless block "sin_cos_1M/blk000000d6" (FF) removed.
+                     Sourceless block "sin_cos_1M/blk00000149" (ROM) removed.
+                      The signal "sin_cos_1M/sig000000b5" is sourceless and has been removed.
+                       Sourceless block "sin_cos_1M/blk000000d7" (FF) removed.
+                     Sourceless block "sin_cos_1M/blk0000015b" (ROM) removed.
+                      The signal "sin_cos_1M/sig000000b7" is sourceless and has been removed.
+                       Sourceless block "sin_cos_1M/blk000000d9" (FF) removed.
+                     Sourceless block "sin_cos_1M/blk0000015d" (ROM) removed.
+                      The signal "sin_cos_1M/sig000000b6" is sourceless and has been removed.
+                       Sourceless block "sin_cos_1M/blk000000d8" (FF) removed.
+     Sourceless block "sin_cos_1M/blk000000cb" (FF) removed.
+      The signal "sin_cos_1M/sig0000011f" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk0000014a" (ROM) removed.
+      The signal "sin_cos_1M/sig0000009f" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk0000014b" (ROM) removed.
+      The signal "sin_cos_1M/sig000000a0" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk0000014c" (ROM) removed.
+      The signal "sin_cos_1M/sig000000a1" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk0000014d" (ROM) removed.
+      The signal "sin_cos_1M/sig000000a2" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk0000014e" (ROM) removed.
+      The signal "sin_cos_1M/sig000000a3" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk0000014f" (ROM) removed.
+      The signal "sin_cos_1M/sig000000a4" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000150" (ROM) removed.
+      The signal "sin_cos_1M/sig000000a5" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk000000c5" (FF) removed.
+        The signal "sin_cos_1M/sig00000119" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000151" (ROM) removed.
+      The signal "sin_cos_1M/sig000000a6" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk000000c6" (FF) removed.
+        The signal "sin_cos_1M/sig0000011a" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk0000015a" (ROM) removed.
+          The signal "sin_cos_1M/sig00000140" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk0000015c" (ROM) removed.
+          The signal "sin_cos_1M/sig00000141" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000152" (ROM) removed.
+      The signal "sin_cos_1M/sig000000a7" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk000000c7" (FF) removed.
+        The signal "sin_cos_1M/sig0000011b" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000153" (ROM) removed.
+      The signal "sin_cos_1M/sig000000a8" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk000000c8" (FF) removed.
+        The signal "sin_cos_1M/sig0000011c" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000154" (ROM) removed.
+      The signal "sin_cos_1M/sig000000a9" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk000000c9" (FF) removed.
+        The signal "sin_cos_1M/sig0000011d" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000155" (ROM) removed.
+      The signal "sin_cos_1M/sig000000aa" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk000000ca" (FF) removed.
+        The signal "sin_cos_1M/sig0000011e" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk00000161" (FF) removed.
+    The signal "sin_cos_1M/sig00000144" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001a1" (FF) removed.
+  The signal "sin_cos_1M/sig0000012c" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001a3" (FF) removed.
+  The signal "sin_cos_1M/sig0000012b" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001a5" (FF) removed.
+  The signal "sin_cos_1M/sig0000012a" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001a7" (FF) removed.
+  The signal "sin_cos_1M/sig00000127" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001a9" (FF) removed.
+  The signal "sin_cos_1M/sig00000129" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001ab" (FF) removed.
+  The signal "sin_cos_1M/sig00000128" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001ad" (FF) removed.
+  The signal "sin_cos_1M/sig00000126" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001af" (FF) removed.
+  The signal "sin_cos_1M/sig00000125" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001b1" (FF) removed.
+  The signal "sin_cos_1M/sig00000124" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001b3" (FF) removed.
+  The signal "sin_cos_1M/sig00000123" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001b5" (FF) removed.
+  The signal "sin_cos_1M/sig00000120" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001b7" (FF) removed.
+  The signal "sin_cos_1M/sig00000122" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001b9" (FF) removed.
+  The signal "sin_cos_1M/sig00000121" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001bb" (FF) removed.
+  The signal "sin_cos_1M/sig00000139" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001bd" (FF) removed.
+  The signal "sin_cos_1M/sig00000138" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001bf" (FF) removed.
+  The signal "sin_cos_1M/sig00000137" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001c1" (FF) removed.
+  The signal "sin_cos_1M/sig00000136" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001c3" (FF) removed.
+  The signal "sin_cos_1M/sig00000133" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001c5" (FF) removed.
+  The signal "sin_cos_1M/sig00000135" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001c7" (FF) removed.
+  The signal "sin_cos_1M/sig00000134" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001c9" (FF) removed.
+  The signal "sin_cos_1M/sig00000130" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001cb" (FF) removed.
+  The signal "sin_cos_1M/sig00000132" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001cd" (FF) removed.
+  The signal "sin_cos_1M/sig00000131" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001cf" (FF) removed.
+  The signal "sin_cos_1M/sig0000012d" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk0000015f" (ROM) removed.
+    The signal "sin_cos_1M/sig00000142" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk000000c3" (XOR) removed.
+      The signal "sin_cos_1M/sig00000098" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000119" (FF) removed.
+        The signal "sin_cos_1M/sig00000111" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000da" (FF) removed.
+ Sourceless block "sin_cos_1M/blk000001d1" (FF) removed.
+  The signal "sin_cos_1M/sig0000012f" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk000001d3" (FF) removed.
+  The signal "sin_cos_1M/sig0000012e" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000002" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000003" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk0000008a" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig00000202" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000008b" (MUX) removed.
+    The signal "sin_cos_1M/sig0000001e" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk0000001e" (FF) removed.
+      The signal "sin_cos_1M/sig00000055" is sourceless and has been removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000008c" (XOR) removed.
+    The signal "sin_cos_1M/sig0000001f" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk0000001f" (FF) removed.
+      The signal "sin_cos_1M/sig00000054" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000008d" (FF) removed.
+        The signal "sin_cos_1M/sig00000070" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000108" (FF) removed.
+        The signal "sin_cos_1M/sig0000013d" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000004" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk00000087" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig00000200" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000088" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig00000201" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000089" (XOR) removed.
+    The signal "sin_cos_1M/sig00000020" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000020" (FF) removed.
+      The signal "sin_cos_1M/sig00000053" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000008e" (FF) removed.
+        The signal "sin_cos_1M/sig0000006f" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000109" (FF) removed.
+        The signal "sin_cos_1M/sig0000013c" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000011a" (ROM) removed.
+        The signal "sin_cos_1M/sig000000b8" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk00000106" (FF) removed.
+          The signal "sin_cos_1M/sig000000f6" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000011b" (ROM) removed.
+        The signal "sin_cos_1M/sig000000c4" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000fa" (FF) removed.
+          The signal "sin_cos_1M/sig000000d0" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000011c" (ROM) removed.
+        The signal "sin_cos_1M/sig000000c2" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000fc" (FF) removed.
+          The signal "sin_cos_1M/sig00000100" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000011d" (ROM) removed.
+        The signal "sin_cos_1M/sig000000ce" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000f0" (FF) removed.
+          The signal "sin_cos_1M/sig000000da" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000011e" (ROM) removed.
+        The signal "sin_cos_1M/sig000000c3" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000fb" (FF) removed.
+          The signal "sin_cos_1M/sig00000101" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000011f" (ROM) removed.
+        The signal "sin_cos_1M/sig000000cf" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000ef" (FF) removed.
+          The signal "sin_cos_1M/sig000000db" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000120" (ROM) removed.
+        The signal "sin_cos_1M/sig000000b9" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk00000105" (FF) removed.
+          The signal "sin_cos_1M/sig000000f7" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000121" (ROM) removed.
+        The signal "sin_cos_1M/sig000000c5" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000f9" (FF) removed.
+          The signal "sin_cos_1M/sig000000d1" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000122" (ROM) removed.
+        The signal "sin_cos_1M/sig000000ba" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk00000104" (FF) removed.
+          The signal "sin_cos_1M/sig000000f8" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000123" (ROM) removed.
+        The signal "sin_cos_1M/sig000000c6" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000f8" (FF) removed.
+          The signal "sin_cos_1M/sig000000d2" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000124" (ROM) removed.
+        The signal "sin_cos_1M/sig000000bb" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk00000103" (FF) removed.
+          The signal "sin_cos_1M/sig000000f9" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000125" (ROM) removed.
+        The signal "sin_cos_1M/sig000000c7" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000f7" (FF) removed.
+          The signal "sin_cos_1M/sig000000d3" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000126" (ROM) removed.
+        The signal "sin_cos_1M/sig000000bc" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk00000102" (FF) removed.
+          The signal "sin_cos_1M/sig000000fa" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000127" (ROM) removed.
+        The signal "sin_cos_1M/sig000000c8" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000f6" (FF) removed.
+          The signal "sin_cos_1M/sig000000d4" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000128" (ROM) removed.
+        The signal "sin_cos_1M/sig000000bd" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk00000101" (FF) removed.
+          The signal "sin_cos_1M/sig000000fb" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000129" (ROM) removed.
+        The signal "sin_cos_1M/sig000000c9" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000f5" (FF) removed.
+          The signal "sin_cos_1M/sig000000d5" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000012a" (ROM) removed.
+        The signal "sin_cos_1M/sig000000be" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk00000100" (FF) removed.
+          The signal "sin_cos_1M/sig000000fc" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000012b" (ROM) removed.
+        The signal "sin_cos_1M/sig000000ca" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000f4" (FF) removed.
+          The signal "sin_cos_1M/sig000000d6" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000012c" (ROM) removed.
+        The signal "sin_cos_1M/sig000000bf" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000ff" (FF) removed.
+          The signal "sin_cos_1M/sig000000fd" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000012d" (ROM) removed.
+        The signal "sin_cos_1M/sig000000cb" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000f3" (FF) removed.
+          The signal "sin_cos_1M/sig000000d7" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000012e" (ROM) removed.
+        The signal "sin_cos_1M/sig000000c0" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000fe" (FF) removed.
+          The signal "sin_cos_1M/sig000000fe" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000012f" (ROM) removed.
+        The signal "sin_cos_1M/sig000000cc" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000f2" (FF) removed.
+          The signal "sin_cos_1M/sig000000d8" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000130" (ROM) removed.
+        The signal "sin_cos_1M/sig000000c1" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000fd" (FF) removed.
+          The signal "sin_cos_1M/sig000000ff" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000131" (ROM) removed.
+        The signal "sin_cos_1M/sig000000cd" is sourceless and has been removed.
+         Sourceless block "sin_cos_1M/blk000000f1" (FF) removed.
+          The signal "sin_cos_1M/sig000000d9" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000160" (FF) removed.
+      The signal "sin_cos_1M/sig00000143" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000005" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk00000084" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001fe" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000085" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001ff" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000086" (XOR) removed.
+    The signal "sin_cos_1M/sig00000021" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000021" (FF) removed.
+      The signal "sin_cos_1M/sig00000052" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000008f" (FF) removed.
+        The signal "sin_cos_1M/sig0000006e" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000006" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk00000081" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001fc" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000082" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001fd" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000083" (XOR) removed.
+    The signal "sin_cos_1M/sig00000022" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000022" (FF) removed.
+      The signal "sin_cos_1M/sig00000051" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000090" (FF) removed.
+        The signal "sin_cos_1M/sig0000006d" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000007" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk0000007e" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001fa" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000007f" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001fb" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000080" (XOR) removed.
+    The signal "sin_cos_1M/sig00000023" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000023" (FF) removed.
+      The signal "sin_cos_1M/sig00000050" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000091" (FF) removed.
+        The signal "sin_cos_1M/sig0000006c" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000008" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk0000007b" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001f8" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000007c" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001f9" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000007d" (XOR) removed.
+    The signal "sin_cos_1M/sig00000024" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000024" (FF) removed.
+      The signal "sin_cos_1M/sig0000004f" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000092" (FF) removed.
+        The signal "sin_cos_1M/sig0000006b" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000009" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk00000078" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001f6" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000079" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001f7" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000007a" (XOR) removed.
+    The signal "sin_cos_1M/sig00000025" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000025" (FF) removed.
+      The signal "sin_cos_1M/sig0000004e" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000093" (FF) removed.
+        The signal "sin_cos_1M/sig0000006a" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000000a" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk00000075" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001f4" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000076" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001f5" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000077" (XOR) removed.
+    The signal "sin_cos_1M/sig00000026" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000026" (FF) removed.
+      The signal "sin_cos_1M/sig0000004d" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000094" (FF) removed.
+        The signal "sin_cos_1M/sig00000069" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000000b" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk00000072" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001f2" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000073" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001f3" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000074" (XOR) removed.
+    The signal "sin_cos_1M/sig00000027" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000027" (FF) removed.
+      The signal "sin_cos_1M/sig0000004c" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000095" (FF) removed.
+        The signal "sin_cos_1M/sig00000068" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000000c" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk0000006f" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001f0" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000070" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001f1" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000071" (XOR) removed.
+    The signal "sin_cos_1M/sig00000028" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000028" (FF) removed.
+      The signal "sin_cos_1M/sig0000004b" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000096" (FF) removed.
+        The signal "sin_cos_1M/sig00000067" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000000d" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk0000006c" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001ee" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000006d" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001ef" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000006e" (XOR) removed.
+    The signal "sin_cos_1M/sig00000029" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000029" (FF) removed.
+      The signal "sin_cos_1M/sig0000004a" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000097" (FF) removed.
+        The signal "sin_cos_1M/sig00000066" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000000e" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk00000069" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001ec" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000006a" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001ed" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000006b" (XOR) removed.
+    The signal "sin_cos_1M/sig0000002a" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk0000002a" (FF) removed.
+      The signal "sin_cos_1M/sig00000049" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000098" (FF) removed.
+        The signal "sin_cos_1M/sig00000065" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000000f" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk00000066" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001ea" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000067" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001eb" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000068" (XOR) removed.
+    The signal "sin_cos_1M/sig0000002b" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk0000002b" (FF) removed.
+      The signal "sin_cos_1M/sig00000048" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk00000099" (FF) removed.
+        The signal "sin_cos_1M/sig00000064" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000010" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk00000063" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001e8" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000064" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001e9" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000065" (XOR) removed.
+    The signal "sin_cos_1M/sig0000002c" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk0000002c" (FF) removed.
+      The signal "sin_cos_1M/sig00000047" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000009a" (FF) removed.
+        The signal "sin_cos_1M/sig00000063" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000011" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk00000060" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001e6" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000061" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001e7" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000062" (XOR) removed.
+    The signal "sin_cos_1M/sig0000002d" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk0000002d" (FF) removed.
+      The signal "sin_cos_1M/sig00000046" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000009b" (FF) removed.
+        The signal "sin_cos_1M/sig00000062" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000012" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk0000005d" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001e4" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000005e" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001e5" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000005f" (XOR) removed.
+    The signal "sin_cos_1M/sig0000002e" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk0000002e" (FF) removed.
+      The signal "sin_cos_1M/sig00000045" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000009c" (FF) removed.
+        The signal "sin_cos_1M/sig00000061" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000013" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk0000005a" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001e2" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000005b" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001e3" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000005c" (XOR) removed.
+    The signal "sin_cos_1M/sig0000002f" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk0000002f" (FF) removed.
+      The signal "sin_cos_1M/sig00000044" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000009d" (FF) removed.
+        The signal "sin_cos_1M/sig00000060" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000014" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk00000057" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001e0" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000058" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001e1" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000059" (XOR) removed.
+    The signal "sin_cos_1M/sig00000030" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000030" (FF) removed.
+      The signal "sin_cos_1M/sig00000043" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000009e" (FF) removed.
+        The signal "sin_cos_1M/sig0000005f" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000015" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk00000054" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001de" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000055" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001df" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000056" (XOR) removed.
+    The signal "sin_cos_1M/sig00000031" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000031" (FF) removed.
+      The signal "sin_cos_1M/sig00000042" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk0000009f" (FF) removed.
+        The signal "sin_cos_1M/sig0000005e" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000016" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk00000051" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001dc" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000052" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001dd" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000053" (XOR) removed.
+    The signal "sin_cos_1M/sig00000032" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000032" (FF) removed.
+      The signal "sin_cos_1M/sig00000041" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk000000a0" (FF) removed.
+        The signal "sin_cos_1M/sig0000005d" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000017" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk0000004e" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001da" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000004f" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001db" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000050" (XOR) removed.
+    The signal "sin_cos_1M/sig00000033" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000033" (FF) removed.
+      The signal "sin_cos_1M/sig00000040" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk000000a1" (FF) removed.
+        The signal "sin_cos_1M/sig0000005c" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000018" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk0000004b" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001d8" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000004c" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001d9" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000004d" (XOR) removed.
+    The signal "sin_cos_1M/sig00000034" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000034" (FF) removed.
+      The signal "sin_cos_1M/sig0000003f" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk000000a2" (FF) removed.
+        The signal "sin_cos_1M/sig0000005b" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000019" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk00000048" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001d6" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000049" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001d7" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000004a" (XOR) removed.
+    The signal "sin_cos_1M/sig00000035" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000035" (FF) removed.
+      The signal "sin_cos_1M/sig0000003e" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk000000a3" (FF) removed.
+        The signal "sin_cos_1M/sig0000005a" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000001a" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk00000045" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001d4" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000046" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001d5" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000047" (XOR) removed.
+    The signal "sin_cos_1M/sig00000036" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000036" (FF) removed.
+      The signal "sin_cos_1M/sig0000003d" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk000000a4" (FF) removed.
+        The signal "sin_cos_1M/sig00000059" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000001b" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk00000042" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001d2" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000043" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001d3" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000044" (XOR) removed.
+    The signal "sin_cos_1M/sig00000037" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000037" (FF) removed.
+      The signal "sin_cos_1M/sig0000003c" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk000000a5" (FF) removed.
+        The signal "sin_cos_1M/sig00000058" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000001c" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk0000003f" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001d0" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000040" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001d1" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk00000041" (XOR) removed.
+    The signal "sin_cos_1M/sig00000038" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000038" (FF) removed.
+      The signal "sin_cos_1M/sig0000003b" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk000000a6" (FF) removed.
+        The signal "sin_cos_1M/sig00000057" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000001d" is sourceless and has been removed.
+ Sourceless block "sin_cos_1M/blk0000003a/blk0000003c" (ROM) removed.
+  The signal "sin_cos_1M/blk0000003a/sig000001ce" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000003d" (MUX) removed.
+    The signal "sin_cos_1M/blk0000003a/sig000001cf" is sourceless and has been
+removed.
+   Sourceless block "sin_cos_1M/blk0000003a/blk0000003e" (XOR) removed.
+    The signal "sin_cos_1M/sig00000039" is sourceless and has been removed.
+     Sourceless block "sin_cos_1M/blk00000039" (FF) removed.
+      The signal "sin_cos_1M/sig0000003a" is sourceless and has been removed.
+       Sourceless block "sin_cos_1M/blk000000a7" (FF) removed.
+        The signal "sin_cos_1M/sig00000056" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000f5" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000e8" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000f4" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000f3" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000f2" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000f1" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000e7" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000e6" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000e5" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000e4" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000f0" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000ef" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000ee" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000ed" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000e3" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000e2" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000e1" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000e0" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000ec" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000eb" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000ea" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000e9" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000df" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000de" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000dd" is sourceless and has been removed.
+The signal "sin_cos_1M/sig000000dc" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000145" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000146" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000147" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000148" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000149" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000014a" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000014b" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000014c" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000014d" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000014e" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000014f" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000150" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000151" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000152" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000153" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000154" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000155" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000156" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000157" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000158" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000159" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000015a" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000015b" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000015c" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000015d" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000015e" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000015f" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000160" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000161" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000162" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000163" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000164" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000165" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000166" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000167" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000168" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000169" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000016a" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000016b" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000016c" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000016d" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000016e" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000016f" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000170" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000171" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000172" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000173" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000174" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000175" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000176" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000177" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000178" is sourceless and has been removed.
+The signal "sin_cos_1M/sig00000179" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000017a" is sourceless and has been removed.
+The signal "sin_cos_1M/sig0000017b" is sourceless and has been removed.
+The signal "sin_cos_1M/blk0000003a/sig000001cd" is sourceless and has been
+removed.
+The signal "chirp_instance/uut/douta<15>" is sourceless and has been removed.
+The signal "chirp_instance/uut/douta<14>" is sourceless and has been removed.
+Unused block "sin_cos_1M/blk00000001" (ONE) removed.
+Unused block "sin_cos_1M/blk00000002" (ZERO) removed.
+Unused block "sin_cos_1M/blk00000003" (FF) removed.
+Unused block "sin_cos_1M/blk00000004" (FF) removed.
+Unused block "sin_cos_1M/blk00000005" (FF) removed.
+Unused block "sin_cos_1M/blk00000006" (FF) removed.
+Unused block "sin_cos_1M/blk00000007" (FF) removed.
+Unused block "sin_cos_1M/blk00000008" (FF) removed.
+Unused block "sin_cos_1M/blk00000009" (FF) removed.
+Unused block "sin_cos_1M/blk0000000a" (FF) removed.
+Unused block "sin_cos_1M/blk0000000b" (FF) removed.
+Unused block "sin_cos_1M/blk0000000c" (FF) removed.
+Unused block "sin_cos_1M/blk0000000d" (FF) removed.
+Unused block "sin_cos_1M/blk0000000e" (FF) removed.
+Unused block "sin_cos_1M/blk0000000f" (FF) removed.
+Unused block "sin_cos_1M/blk00000010" (FF) removed.
+Unused block "sin_cos_1M/blk00000011" (FF) removed.
+Unused block "sin_cos_1M/blk00000012" (FF) removed.
+Unused block "sin_cos_1M/blk00000013" (FF) removed.
+Unused block "sin_cos_1M/blk00000014" (FF) removed.
+Unused block "sin_cos_1M/blk00000015" (FF) removed.
+Unused block "sin_cos_1M/blk00000016" (FF) removed.
+Unused block "sin_cos_1M/blk00000017" (FF) removed.
+Unused block "sin_cos_1M/blk00000018" (FF) removed.
+Unused block "sin_cos_1M/blk00000019" (FF) removed.
+Unused block "sin_cos_1M/blk0000001a" (FF) removed.
+Unused block "sin_cos_1M/blk0000001b" (FF) removed.
+Unused block "sin_cos_1M/blk0000001c" (FF) removed.
+Unused block "sin_cos_1M/blk0000001d" (FF) removed.
+Unused block "sin_cos_1M/blk0000003a/blk0000003b" (ZERO) removed.
+Unused block "sin_cos_1M/blk00000162" (RAMB8BWER) removed.
+Unused block "sin_cos_1M/blk00000163" (RAMB16BWER) removed.
+Unused block "sin_cos_1M/blk00000164" (RAMB16BWER) removed.
+Unused block "sin_cos_1M/blk00000165" (RAMB16BWER) removed.
+Unused block "sin_cos_1M/blk00000166" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk00000168" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk0000016a" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk0000016c" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk0000016e" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk00000170" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk00000172" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk00000174" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk00000176" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk00000178" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk0000017a" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk0000017c" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk0000017e" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk00000180" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk00000182" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk00000184" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk00000186" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk00000188" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk0000018a" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk0000018c" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk0000018e" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk00000190" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk00000192" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk00000194" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk00000196" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk00000198" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk0000019a" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk0000019c" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk0000019e" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001a0" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001a2" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001a4" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001a6" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001a8" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001aa" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001ac" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001ae" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001b0" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001b2" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001b4" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001b6" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001b8" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001ba" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001bc" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001be" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001c0" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001c2" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001c4" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001c6" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001c8" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001ca" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001cc" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001ce" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001d0" (SRLC16E) removed.
+Unused block "sin_cos_1M/blk000001d2" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk0000003a/blk0000008b" (MUX) removed.
+Unused block "sin_cos_500K/blk0000008d" (FF) removed.
+Unused block "sin_cos_500K/blk0000008e" (FF) removed.
+Unused block "sin_cos_500K/blk0000008f" (FF) removed.
+Unused block "sin_cos_500K/blk00000090" (FF) removed.
+Unused block "sin_cos_500K/blk00000091" (FF) removed.
+Unused block "sin_cos_500K/blk00000092" (FF) removed.
+Unused block "sin_cos_500K/blk00000093" (FF) removed.
+Unused block "sin_cos_500K/blk00000094" (FF) removed.
+Unused block "sin_cos_500K/blk00000095" (FF) removed.
+Unused block "sin_cos_500K/blk00000096" (FF) removed.
+Unused block "sin_cos_500K/blk00000097" (FF) removed.
+Unused block "sin_cos_500K/blk00000098" (FF) removed.
+Unused block "sin_cos_500K/blk00000099" (FF) removed.
+Unused block "sin_cos_500K/blk0000009a" (FF) removed.
+Unused block "sin_cos_500K/blk0000009b" (FF) removed.
+Unused block "sin_cos_500K/blk0000009c" (FF) removed.
+Unused block "sin_cos_500K/blk0000009d" (FF) removed.
+Unused block "sin_cos_500K/blk0000009e" (FF) removed.
+Unused block "sin_cos_500K/blk0000009f" (FF) removed.
+Unused block "sin_cos_500K/blk000000a0" (FF) removed.
+Unused block "sin_cos_500K/blk000000a1" (FF) removed.
+Unused block "sin_cos_500K/blk000000a2" (FF) removed.
+Unused block "sin_cos_500K/blk000000a3" (FF) removed.
+Unused block "sin_cos_500K/blk000000a4" (FF) removed.
+Unused block "sin_cos_500K/blk000000a5" (FF) removed.
+Unused block "sin_cos_500K/blk000000a6" (FF) removed.
+Unused block "sin_cos_500K/blk000000a7" (FF) removed.
+Unused block "sin_cos_500K/blk000000cb" (FF) removed.
+Unused block "sin_cos_500K/blk00000166" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk00000168" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk0000016a" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk0000016c" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk0000016e" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk00000170" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk00000172" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk00000174" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk00000176" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk00000178" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk0000017a" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk0000017c" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk0000017e" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk00000180" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk00000182" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk00000184" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk00000186" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk00000188" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk0000018a" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk0000018c" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk0000018e" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk00000190" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk00000192" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk00000194" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk00000196" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk0000019a" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk0000019c" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk000001ba" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk000001bc" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk000001be" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk000001c0" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk000001c2" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk000001c4" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk000001c6" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk000001c8" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk000001ca" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk000001cc" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk000001ce" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk000001d0" (SRLC16E) removed.
+Unused block "sin_cos_500K/blk000001d2" (SRLC16E) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+GND 		chirp_instance/uut/XST_GND
+VCC 		chirp_instance/uut/XST_VCC
+VCC 		sin_cos_500K/blk00000001
+GND 		sin_cos_500K/blk00000002
+FDE 		sin_cos_500K/blk00000003
+   optimized to 0
+FDE 		sin_cos_500K/blk00000004
+   optimized to 0
+FDE 		sin_cos_500K/blk00000005
+   optimized to 0
+FDE 		sin_cos_500K/blk00000006
+   optimized to 0
+FDE 		sin_cos_500K/blk00000007
+   optimized to 0
+FDE 		sin_cos_500K/blk00000008
+   optimized to 0
+FDE 		sin_cos_500K/blk00000009
+   optimized to 0
+FDE 		sin_cos_500K/blk0000000b
+   optimized to 0
+FDE 		sin_cos_500K/blk0000000d
+   optimized to 0
+FDE 		sin_cos_500K/blk0000000e
+   optimized to 0
+FDE 		sin_cos_500K/blk0000000f
+   optimized to 0
+FDE 		sin_cos_500K/blk00000014
+   optimized to 0
+FDE 		sin_cos_500K/blk00000016
+   optimized to 0
+FDE 		sin_cos_500K/blk00000017
+   optimized to 0
+FDE 		sin_cos_500K/blk00000018
+   optimized to 0
+FDE 		sin_cos_500K/blk0000001b
+   optimized to 0
+FDE 		sin_cos_500K/blk0000001c
+   optimized to 0
+FDE 		sin_cos_500K/blk0000001d
+   optimized to 0
+GND 		sin_cos_500K/blk0000003a/blk0000003b
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ad1_clk                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| ad1_in<0>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad1_in<1>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad1_in<2>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad1_in<3>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad1_in<4>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad1_in<5>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad1_in<6>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad1_in<7>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad1_in<8>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad1_in<9>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad1_in<10>                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad1_in<11>                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad2_clk                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| ad2_in<0>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad2_in<1>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad2_in<2>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad2_in<3>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad2_in<4>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad2_in<5>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad2_in<6>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad2_in<7>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad2_in<8>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad2_in<9>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad2_in<10>                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ad2_in<11>                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| clk                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| da1_clk                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da1_wrt                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da1data<0>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da1data<1>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da1data<2>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da1data<3>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da1data<4>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da1data<5>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da1data<6>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da1data<7>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da1data<8>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da1data<9>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da1data<10>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da1data<11>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da1data<12>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da1data<13>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da2_clk                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da2_wrt                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da2data<0>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da2data<1>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da2data<2>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da2data<3>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da2data<4>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da2data<5>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da2data<6>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da2data<7>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da2data<8>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da2data<9>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da2data<10>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da2data<11>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da2data<12>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| da2data<13>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led0                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| rst_n                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

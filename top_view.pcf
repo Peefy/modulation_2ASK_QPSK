@@ -1,0 +1,206 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Jan 19 17:14:06 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "T8" LEVEL 1;
+COMP "led0" LOCATE = SITE "P4" LEVEL 1;
+COMP "ad1_clk" LOCATE = SITE "B5" LEVEL 1;
+COMP "ad2_clk" LOCATE = SITE "A13" LEVEL 1;
+COMP "da1_clk" LOCATE = SITE "T13" LEVEL 1;
+COMP "da2_clk" LOCATE = SITE "R9" LEVEL 1;
+COMP "da1_wrt" LOCATE = SITE "R12" LEVEL 1;
+COMP "da2_wrt" LOCATE = SITE "T12" LEVEL 1;
+COMP "ad1_in<10>" LOCATE = SITE "B6" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "L3" LEVEL 1;
+COMP "ad1_in<11>" LOCATE = SITE "A4" LEVEL 1;
+COMP "ad2_in<10>" LOCATE = SITE "B14" LEVEL 1;
+COMP "ad2_in<11>" LOCATE = SITE "B12" LEVEL 1;
+COMP "da1data<0>" LOCATE = SITE "R14" LEVEL 1;
+COMP "da1data<1>" LOCATE = SITE "T14" LEVEL 1;
+COMP "da1data<2>" LOCATE = SITE "R15" LEVEL 1;
+COMP "da1data<3>" LOCATE = SITE "T15" LEVEL 1;
+COMP "da1data<4>" LOCATE = SITE "P15" LEVEL 1;
+COMP "da1data<5>" LOCATE = SITE "R16" LEVEL 1;
+COMP "da1data<6>" LOCATE = SITE "N16" LEVEL 1;
+COMP "da1data<7>" LOCATE = SITE "P16" LEVEL 1;
+COMP "da1data<8>" LOCATE = SITE "M16" LEVEL 1;
+COMP "da1data<9>" LOCATE = SITE "M15" LEVEL 1;
+COMP "da2data<0>" LOCATE = SITE "N6" LEVEL 1;
+COMP "da2data<1>" LOCATE = SITE "P6" LEVEL 1;
+COMP "da2data<2>" LOCATE = SITE "M4" LEVEL 1;
+COMP "da2data<3>" LOCATE = SITE "P2" LEVEL 1;
+COMP "da2data<4>" LOCATE = SITE "R2" LEVEL 1;
+COMP "da2data<5>" LOCATE = SITE "R1" LEVEL 1;
+COMP "da2data<6>" LOCATE = SITE "R5" LEVEL 1;
+COMP "da2data<7>" LOCATE = SITE "T4" LEVEL 1;
+COMP "da2data<8>" LOCATE = SITE "T6" LEVEL 1;
+COMP "da2data<9>" LOCATE = SITE "T5" LEVEL 1;
+COMP "ad1_in<0>" LOCATE = SITE "A12" LEVEL 1;
+COMP "ad1_in<1>" LOCATE = SITE "A10" LEVEL 1;
+COMP "ad1_in<2>" LOCATE = SITE "B10" LEVEL 1;
+COMP "ad1_in<3>" LOCATE = SITE "C8" LEVEL 1;
+COMP "ad1_in<4>" LOCATE = SITE "A9" LEVEL 1;
+COMP "ad1_in<5>" LOCATE = SITE "B8" LEVEL 1;
+COMP "ad1_in<6>" LOCATE = SITE "A8" LEVEL 1;
+COMP "ad1_in<7>" LOCATE = SITE "A6" LEVEL 1;
+COMP "ad1_in<8>" LOCATE = SITE "A7" LEVEL 1;
+COMP "ad1_in<9>" LOCATE = SITE "A5" LEVEL 1;
+COMP "ad2_in<0>" LOCATE = SITE "D11" LEVEL 1;
+COMP "ad2_in<1>" LOCATE = SITE "C9" LEVEL 1;
+COMP "ad2_in<2>" LOCATE = SITE "E11" LEVEL 1;
+COMP "ad2_in<3>" LOCATE = SITE "D16" LEVEL 1;
+COMP "ad2_in<4>" LOCATE = SITE "E15" LEVEL 1;
+COMP "ad2_in<5>" LOCATE = SITE "C15" LEVEL 1;
+COMP "ad2_in<6>" LOCATE = SITE "C16" LEVEL 1;
+COMP "ad2_in<7>" LOCATE = SITE "B15" LEVEL 1;
+COMP "ad2_in<8>" LOCATE = SITE "B16" LEVEL 1;
+COMP "ad2_in<9>" LOCATE = SITE "A14" LEVEL 1;
+COMP "da1data<10>" LOCATE = SITE "K15" LEVEL 1;
+COMP "da1data<11>" LOCATE = SITE "L16" LEVEL 1;
+COMP "da1data<12>" LOCATE = SITE "J16" LEVEL 1;
+COMP "da1data<13>" LOCATE = SITE "K16" LEVEL 1;
+COMP "da2data<10>" LOCATE = SITE "T7" LEVEL 1;
+COMP "da2data<11>" LOCATE = SITE "R7" LEVEL 1;
+COMP "da2data<12>" LOCATE = SITE "T9" LEVEL 1;
+COMP "da2data<13>" LOCATE = SITE "L8" LEVEL 1;
+PIN sin_cos_500K/blk00000162_pins<26> = BEL "sin_cos_500K/blk00000162" PINNAME
+        CLKAWRCLK;
+PIN sin_cos_500K/blk00000162_pins<27> = BEL "sin_cos_500K/blk00000162" PINNAME
+        CLKBRDCLK;
+PIN sin_cos_500K/blk00000163_pins<24> = BEL "sin_cos_500K/blk00000163" PINNAME
+        CLKA;
+PIN sin_cos_500K/blk00000163_pins<25> = BEL "sin_cos_500K/blk00000163" PINNAME
+        CLKB;
+PIN sin_cos_500K/blk00000164_pins<24> = BEL "sin_cos_500K/blk00000164" PINNAME
+        CLKA;
+PIN sin_cos_500K/blk00000164_pins<25> = BEL "sin_cos_500K/blk00000164" PINNAME
+        CLKB;
+PIN sin_cos_500K/blk00000165_pins<24> = BEL "sin_cos_500K/blk00000165" PINNAME
+        CLKA;
+PIN sin_cos_500K/blk00000165_pins<25> = BEL "sin_cos_500K/blk00000165" PINNAME
+        CLKB;
+PIN
+        chirp_instance/uut/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram_pins<26>
+        = BEL
+        "chirp_instance/uut/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram"
+        PINNAME CLKAWRCLK;
+TIMEGRP sys_clk_pin = BEL "clk_div_50k/count_dpout_low_7" BEL
+        "clk_div_50k/count_dpout_low_6" BEL "clk_div_50k/count_dpout_low_5"
+        BEL "clk_div_50k/count_dpout_low_4" BEL
+        "clk_div_50k/count_dpout_low_3" BEL "clk_div_50k/count_dpout_low_2"
+        BEL "clk_div_50k/count_dpout_low_1" BEL
+        "clk_div_50k/count_dpout_low_0" BEL "clk_div_50k/count_dpout_high_7"
+        BEL "clk_div_50k/count_dpout_high_6" BEL
+        "clk_div_50k/count_dpout_high_5" BEL "clk_div_50k/count_dpout_high_4"
+        BEL "clk_div_50k/count_dpout_high_3" BEL
+        "clk_div_50k/count_dpout_high_2" BEL "clk_div_50k/count_dpout_high_1"
+        BEL "clk_div_50k/count_dpout_high_0" BEL "clk_div_50k/dpout_delay" BEL
+        "clk_div_50k/count_updown_3" BEL "clk_div_50k/count_updown_2" BEL
+        "clk_div_50k/count_updown_1" BEL "clk_div_50k/count_updown_0" BEL
+        "clk_div_50k/addclk" BEL "delay_50k_two/count_8" BEL
+        "delay_50k_two/count_7" BEL "delay_50k_two/count_6" BEL
+        "delay_50k_two/count_5" BEL "delay_50k_two/count_4" BEL
+        "delay_50k_two/count_3" BEL "delay_50k_two/count_2" BEL
+        "delay_50k_two/count_1" BEL "delay_50k/count_8" BEL
+        "delay_50k/count_7" BEL "delay_50k/count_6" BEL "delay_50k/count_5"
+        BEL "delay_50k/count_4" BEL "delay_50k/count_3" BEL
+        "delay_50k/count_2" BEL "chirp_instance/addra_0" BEL
+        "chirp_instance/addra_1" BEL "chirp_instance/addra_2" BEL
+        "chirp_instance/addra_3" BEL "chirp_instance/addra_4" BEL
+        "chirp_instance/addra_5" BEL "chirp_instance/addra_6" BEL
+        "chirp_instance/addra_7" BEL "chirp_instance/addra_8" BEL
+        "clk_div_50k/count8_0" BEL "clk_div_50k/count8_1" BEL
+        "clk_div_50k/count8_2" BEL "da_instance/reg_dadata2_13" BEL
+        "da_instance/reg_dadata2_12" BEL "da_instance/reg_dadata2_11" BEL
+        "da_instance/reg_dadata2_10" BEL "da_instance/reg_dadata2_9" BEL
+        "da_instance/reg_dadata2_8" BEL "da_instance/reg_dadata2_7" BEL
+        "da_instance/reg_dadata2_6" BEL "da_instance/reg_dadata2_5" BEL
+        "da_instance/reg_dadata2_4" BEL "da_instance/reg_dadata2_3" BEL
+        "da_instance/reg_dadata2_2" BEL "da_instance/reg_dadata2_1" BEL
+        "da_instance/reg_dadata2_0" BEL "da_instance/reg_dadata1_13" BEL
+        "da_instance/reg_dadata1_12" BEL "da_instance/reg_dadata1_11" BEL
+        "da_instance/reg_dadata1_10" BEL "da_instance/reg_dadata1_9" BEL
+        "da_instance/reg_dadata1_8" BEL "da_instance/reg_dadata1_7" BEL
+        "da_instance/reg_dadata1_6" BEL "da_instance/reg_dadata1_5" BEL
+        "da_instance/reg_dadata1_4" BEL "da_instance/reg_dadata1_3" BEL
+        "da_instance/reg_dadata1_2" BEL "da_instance/reg_dadata1_1" BEL
+        "da_instance/reg_dadata1_0" BEL "clk_div_50k/delclk" BEL
+        "clk_div_50k/locked" BEL "delay_50k_two/reg_clk50k" BEL
+        "delay_50k_two/firstFlag" BEL "delay_50k/reg_clk50k" BEL
+        "delay_50k/firstFlag" BEL "da2_wrt_OBUF_BUFG" BEL
+        "sin_cos_500K/blk0000000a" BEL "sin_cos_500K/blk0000000c" BEL
+        "sin_cos_500K/blk00000010" BEL "sin_cos_500K/blk00000011" BEL
+        "sin_cos_500K/blk00000012" BEL "sin_cos_500K/blk00000013" BEL
+        "sin_cos_500K/blk00000015" BEL "sin_cos_500K/blk00000019" BEL
+        "sin_cos_500K/blk0000001a" BEL "sin_cos_500K/blk0000001f" BEL
+        "sin_cos_500K/blk00000020" BEL "sin_cos_500K/blk00000021" BEL
+        "sin_cos_500K/blk00000022" BEL "sin_cos_500K/blk00000023" BEL
+        "sin_cos_500K/blk00000024" BEL "sin_cos_500K/blk00000025" BEL
+        "sin_cos_500K/blk00000026" BEL "sin_cos_500K/blk00000027" BEL
+        "sin_cos_500K/blk00000028" BEL "sin_cos_500K/blk00000029" BEL
+        "sin_cos_500K/blk0000002a" BEL "sin_cos_500K/blk0000002b" BEL
+        "sin_cos_500K/blk0000002c" BEL "sin_cos_500K/blk0000002d" BEL
+        "sin_cos_500K/blk0000002e" BEL "sin_cos_500K/blk0000002f" BEL
+        "sin_cos_500K/blk00000030" BEL "sin_cos_500K/blk00000031" BEL
+        "sin_cos_500K/blk00000032" BEL "sin_cos_500K/blk00000033" BEL
+        "sin_cos_500K/blk00000034" BEL "sin_cos_500K/blk00000035" BEL
+        "sin_cos_500K/blk00000036" BEL "sin_cos_500K/blk00000037" BEL
+        "sin_cos_500K/blk00000038" BEL "sin_cos_500K/blk00000039" BEL
+        "sin_cos_500K/blk000000cc" BEL "sin_cos_500K/blk000000cd" BEL
+        "sin_cos_500K/blk000000ce" BEL "sin_cos_500K/blk000000cf" BEL
+        "sin_cos_500K/blk000000d0" BEL "sin_cos_500K/blk000000d1" BEL
+        "sin_cos_500K/blk000000d2" BEL "sin_cos_500K/blk000000e1" BEL
+        "sin_cos_500K/blk000000e2" BEL "sin_cos_500K/blk000000e3" BEL
+        "sin_cos_500K/blk000000e4" BEL "sin_cos_500K/blk000000e5" BEL
+        "sin_cos_500K/blk000000e6" BEL "sin_cos_500K/blk000000e7" BEL
+        "sin_cos_500K/blk000000e8" BEL "sin_cos_500K/blk000000e9" BEL
+        "sin_cos_500K/blk000000ea" BEL "sin_cos_500K/blk000000eb" BEL
+        "sin_cos_500K/blk000000ec" BEL "sin_cos_500K/blk000000ed" BEL
+        "sin_cos_500K/blk000000ee" BEL "sin_cos_500K/blk000000ef" BEL
+        "sin_cos_500K/blk000000f0" BEL "sin_cos_500K/blk000000f1" BEL
+        "sin_cos_500K/blk000000f2" BEL "sin_cos_500K/blk000000f3" BEL
+        "sin_cos_500K/blk000000f4" BEL "sin_cos_500K/blk000000f5" BEL
+        "sin_cos_500K/blk000000f6" BEL "sin_cos_500K/blk000000f7" BEL
+        "sin_cos_500K/blk000000f8" BEL "sin_cos_500K/blk000000f9" BEL
+        "sin_cos_500K/blk000000fa" BEL "sin_cos_500K/blk000000fb" BEL
+        "sin_cos_500K/blk000000fc" BEL "sin_cos_500K/blk000000fd" BEL
+        "sin_cos_500K/blk000000fe" BEL "sin_cos_500K/blk000000ff" BEL
+        "sin_cos_500K/blk00000100" BEL "sin_cos_500K/blk00000101" BEL
+        "sin_cos_500K/blk00000102" BEL "sin_cos_500K/blk00000103" BEL
+        "sin_cos_500K/blk00000104" BEL "sin_cos_500K/blk00000105" BEL
+        "sin_cos_500K/blk00000106" BEL "sin_cos_500K/blk00000107" BEL
+        "sin_cos_500K/blk00000108" BEL "sin_cos_500K/blk00000109" BEL
+        "sin_cos_500K/blk0000010a" BEL "sin_cos_500K/blk0000010b" BEL
+        "sin_cos_500K/blk0000010c" BEL "sin_cos_500K/blk0000010d" BEL
+        "sin_cos_500K/blk0000010e" BEL "sin_cos_500K/blk0000010f" BEL
+        "sin_cos_500K/blk00000110" BEL "sin_cos_500K/blk00000111" BEL
+        "sin_cos_500K/blk00000160" BEL "sin_cos_500K/blk00000161" PIN
+        "sin_cos_500K/blk00000162_pins<26>" PIN
+        "sin_cos_500K/blk00000162_pins<27>" PIN
+        "sin_cos_500K/blk00000163_pins<24>" PIN
+        "sin_cos_500K/blk00000163_pins<25>" PIN
+        "sin_cos_500K/blk00000164_pins<24>" PIN
+        "sin_cos_500K/blk00000164_pins<25>" PIN
+        "sin_cos_500K/blk00000165_pins<24>" PIN
+        "sin_cos_500K/blk00000165_pins<25>" BEL "sin_cos_500K/blk00000198" BEL
+        "sin_cos_500K/blk00000199" BEL "sin_cos_500K/blk0000019e" BEL
+        "sin_cos_500K/blk0000019f" BEL "sin_cos_500K/blk000001a0" BEL
+        "sin_cos_500K/blk000001a1" BEL "sin_cos_500K/blk000001a2" BEL
+        "sin_cos_500K/blk000001a3" BEL "sin_cos_500K/blk000001a4" BEL
+        "sin_cos_500K/blk000001a5" BEL "sin_cos_500K/blk000001a6" BEL
+        "sin_cos_500K/blk000001a7" BEL "sin_cos_500K/blk000001a8" BEL
+        "sin_cos_500K/blk000001a9" BEL "sin_cos_500K/blk000001aa" BEL
+        "sin_cos_500K/blk000001ab" BEL "sin_cos_500K/blk000001ac" BEL
+        "sin_cos_500K/blk000001ad" BEL "sin_cos_500K/blk000001ae" BEL
+        "sin_cos_500K/blk000001af" BEL "sin_cos_500K/blk000001b0" BEL
+        "sin_cos_500K/blk000001b1" BEL "sin_cos_500K/blk000001b2" BEL
+        "sin_cos_500K/blk000001b3" BEL "sin_cos_500K/blk000001b4" BEL
+        "sin_cos_500K/blk000001b5" BEL "sin_cos_500K/blk000001b6" BEL
+        "sin_cos_500K/blk000001b7" BEL "sin_cos_500K/blk000001b8" BEL
+        "sin_cos_500K/blk000001b9" PIN
+        "chirp_instance/uut/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram_pins<26>"
+        BEL "da1_clk" BEL "da1_wrt" BEL "da2_clk" BEL "da2_wrt";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

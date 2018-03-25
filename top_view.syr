@@ -1,0 +1,820 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: top_view.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_view.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_view"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-ftg256
+
+---- Source Options
+Top Module Name                    : top_view
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\ipcore_dir\ip_chirp_data_rom.v" into library work
+Parsing module <ip_chirp_data_rom>.
+Analyzing Verilog file "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\ipcore_dir\ip_sin_cos.v" into library work
+Parsing module <ip_sin_cos>.
+Analyzing Verilog file "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\delay_clk_div_50k.v" into library work
+Parsing module <delay_clk_div_50k>.
+Analyzing Verilog file "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\da2.v" into library work
+Parsing module <da2>.
+Analyzing Verilog file "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\ClkSpliterN.v" into library work
+Parsing module <ClkSpliterN>.
+Analyzing Verilog file "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\chirp.v" into library work
+WARNING:HDLCompiler:1591 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\chirp.v" Line 24: Root scope declaration is not allowed in verilog 95/2K mode
+Parsing module <chirp>.
+Analyzing Verilog file "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\ad.v" into library work
+Parsing module <ad>.
+Analyzing Verilog file "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" into library work
+Parsing module <top_view>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top_view>.
+
+Elaborating module <$unit_1>.
+
+Elaborating module <ClkSpliterN>.
+WARNING:HDLCompiler:413 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\ClkSpliterN.v" Line 54: Result of 16-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\ClkSpliterN.v" Line 137: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\ClkSpliterN.v" Line 153: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\ClkSpliterN.v" Line 156: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\ClkSpliterN.v" Line 177: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:189 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" Line 84: Size mismatch in connection of port <SPLITER_N>. Formal port size is 16-bit while actual signal size is 32-bit.
+
+Elaborating module <ip_sin_cos>.
+WARNING:HDLCompiler:189 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" Line 93: Size mismatch in connection of port <data>. Formal port size is 27-bit while actual signal size is 29-bit.
+WARNING:HDLCompiler:1127 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" Line 95: Assignment to sine_1M ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" Line 103: Size mismatch in connection of port <data>. Formal port size is 27-bit while actual signal size is 29-bit.
+WARNING:HDLCompiler:1127 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" Line 110: Assignment to da_2ask ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" Line 116: Assignment to da_2fsk ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" Line 125: Assignment to da_bpsk ignored, since the identifier is never used
+
+Elaborating module <delay_clk_div_50k>.
+WARNING:HDLCompiler:413 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\delay_clk_div_50k.v" Line 44: Result of 31-bit expression is truncated to fit in 30-bit target.
+WARNING:HDLCompiler:189 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" Line 138: Size mismatch in connection of port <delay>. Formal port size is 30-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" Line 145: Size mismatch in connection of port <delay>. Formal port size is 30-bit while actual signal size is 32-bit.
+
+Elaborating module <chirp>.
+WARNING:HDLCompiler:413 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\chirp.v" Line 34: Result of 16-bit expression is truncated to fit in 14-bit target.
+
+Elaborating module <ip_chirp_data_rom>.
+WARNING:HDLCompiler:1499 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\ipcore_dir\ip_chirp_data_rom.v" Line 39: Empty module <ip_chirp_data_rom> remains a black box.
+WARNING:HDLCompiler:1127 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\chirp.v" Line 45: Assignment to index ignored, since the identifier is never used
+
+Elaborating module <da2>.
+
+Elaborating module <ad>.
+WARNING:HDLCompiler:1127 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" Line 200: Assignment to ad_ch1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" Line 201: Assignment to ad_ch2 ignored, since the identifier is never used
+WARNING:Xst:2972 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" line 196. All outputs of instance <ad_instance> of block <ad> are unconnected in block <top_view>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top_view>.
+    Related source file is "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v".
+        IP_SIN_1M_DATA = 29'b00000000101000111101000110000
+        IP_SIN_1K_DATA = 29'b00000000000000000101001111100
+        IP_SIN_10K_DATA = 29'b00000000000000011010001101100
+        IP_SIN_500K_DATA = 29'b00000000010100011110100011000
+INFO:Xst:3210 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" line 90: Output port <cosine> of the instance <sin_cos_1M> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" line 90: Output port <sine> of the instance <sin_cos_1M> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" line 90: Output port <phase_out> of the instance <sin_cos_1M> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" line 100: Output port <sine> of the instance <sin_cos_500K> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" line 100: Output port <phase_out> of the instance <sin_cos_500K> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" line 196: Output port <ad_ch1> of the instance <ad_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.v" line 196: Output port <ad_ch2> of the instance <ad_instance> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <led0>.
+    Found 1-bit register for signal <clk_dpsk_last>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <top_view> synthesized.
+
+Synthesizing Unit <ClkSpliterN>.
+    Related source file is "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\ClkSpliterN.v".
+        TRUE = 1'b1
+        FALSE = 1'b0
+WARNING:Xst:647 - Input <SPLITER_N<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <locked>.
+    Found 1-bit register for signal <delclk>.
+    Found 1-bit register for signal <addclk>.
+    Found 1-bit register for signal <signal_out_temp>.
+    Found 1-bit register for signal <dpout_delay>.
+    Found 9-bit register for signal <count_dpout_high>.
+    Found 9-bit register for signal <count_dpout_low>.
+    Found 9-bit register for signal <count_n>.
+    Found 8-bit register for signal <count_updown>.
+    Found 3-bit register for signal <count8>.
+    Found 10-bit subtractor for signal <GND_3_o_GND_3_o_sub_17_OUT> created at line 108.
+    Found 10-bit subtractor for signal <GND_3_o_GND_3_o_sub_19_OUT> created at line 108.
+    Found 9-bit adder for signal <count_dpout_high[8]_GND_3_o_add_3_OUT> created at line 89.
+    Found 9-bit adder for signal <count_dpout_low[8]_GND_3_o_add_8_OUT> created at line 97.
+    Found 8-bit adder for signal <count_updown[7]_GND_3_o_add_21_OUT> created at line 137.
+    Found 3-bit adder for signal <count8[2]_GND_3_o_add_32_OUT> created at line 177.
+    Found 3-bit adder for signal <count8[2]_GND_3_o_add_33_OUT> created at line 183.
+    Found 9-bit adder for signal <count_n[8]_GND_3_o_add_43_OUT> created at line 218.
+    Found 8-bit subtractor for signal <GND_3_o_GND_3_o_sub_27_OUT<7:0>> created at line 156.
+    Found 32-bit comparator lessequal for signal <n0027> created at line 108
+    Found 32-bit comparator lessequal for signal <n0030> created at line 108
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred  43 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  16 Multiplexer(s).
+Unit <ClkSpliterN> synthesized.
+
+Synthesizing Unit <delay_clk_div_50k>.
+    Related source file is "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\delay_clk_div_50k.v".
+    Found 30-bit register for signal <count>.
+    Found 1-bit register for signal <firstFlag>.
+    Found 1-bit register for signal <reg_clk50k>.
+    Found 30-bit adder for signal <count[29]_GND_7_o_add_0_OUT> created at line 44.
+    Found 30-bit comparator equal for signal <count[29]_delay[29]_equal_2_o> created at line 45
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <delay_clk_div_50k> synthesized.
+
+Synthesizing Unit <chirp>.
+    Related source file is "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\chirp.v".
+WARNING:Xst:653 - Signal <X_2_o> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 9-bit register for signal <addra>.
+    Found 9-bit adder for signal <addra[8]_GND_8_o_add_1_OUT> created at line 55.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <chirp> synthesized.
+
+Synthesizing Unit <da2>.
+    Related source file is "E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\da2.v".
+    Found 14-bit register for signal <reg_dadata2>.
+    Found 14-bit register for signal <reg_dadata1>.
+    Summary:
+	inferred  28 D-type flip-flop(s).
+Unit <da2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 10
+ 10-bit subtractor                                     : 2
+ 3-bit adder                                           : 1
+ 30-bit adder                                          : 2
+ 8-bit addsub                                          : 1
+ 9-bit adder                                           : 4
+# Registers                                            : 21
+ 1-bit register                                        : 11
+ 14-bit register                                       : 2
+ 3-bit register                                        : 1
+ 30-bit register                                       : 2
+ 8-bit register                                        : 1
+ 9-bit register                                        : 4
+# Comparators                                          : 4
+ 30-bit comparator equal                               : 2
+ 32-bit comparator lessequal                           : 2
+# Multiplexers                                         : 21
+ 1-bit 2-to-1 multiplexer                              : 3
+ 3-bit 2-to-1 multiplexer                              : 2
+ 30-bit 2-to-1 multiplexer                             : 4
+ 8-bit 2-to-1 multiplexer                              : 6
+ 9-bit 2-to-1 multiplexer                              : 6
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/ip_sin_cos.ngc>.
+Reading core <ipcore_dir/ip_chirp_data_rom.ngc>.
+Loading core <ip_sin_cos> for timing and area information for instance <sin_cos_1M>.
+Loading core <ip_sin_cos> for timing and area information for instance <sin_cos_500K>.
+Loading core <ip_chirp_data_rom> for timing and area information for instance <uut>.
+
+Synthesizing (advanced) Unit <ClkSpliterN>.
+The following registers are absorbed into accumulator <count8>: 1 register on signal <count8>.
+The following registers are absorbed into counter <count_n>: 1 register on signal <count_n>.
+Unit <ClkSpliterN> synthesized (advanced).
+
+Synthesizing (advanced) Unit <chirp>.
+The following registers are absorbed into counter <addra>: 1 register on signal <addra>.
+Unit <chirp> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 10-bit subtractor                                     : 2
+ 30-bit adder                                          : 2
+ 8-bit addsub                                          : 1
+ 9-bit adder                                           : 2
+# Counters                                             : 2
+ 9-bit up counter                                      : 2
+# Accumulators                                         : 1
+ 3-bit up loadable accumulator                         : 1
+# Registers                                            : 125
+ Flip-Flops                                            : 125
+# Comparators                                          : 4
+ 30-bit comparator equal                               : 2
+ 32-bit comparator lessequal                           : 2
+# Multiplexers                                         : 18
+ 1-bit 2-to-1 multiplexer                              : 3
+ 3-bit 2-to-1 multiplexer                              : 1
+ 30-bit 2-to-1 multiplexer                             : 4
+ 8-bit 2-to-1 multiplexer                              : 6
+ 9-bit 2-to-1 multiplexer                              : 4
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top_view> ...
+WARNING:Xst:1710 - FF/Latch <clk_div_50k/count_dpout_low_8> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clk_div_50k/count_dpout_high_8> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <da2> ...
+WARNING:Xst:1710 - FF/Latch <delay_50k_two/count_11> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_10> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_9> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_29> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_28> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_27> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_26> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_25> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_24> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_23> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_22> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_21> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_20> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_19> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_18> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_17> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_16> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_15> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_14> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_13> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_12> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_11> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_10> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k/count_9> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clk_div_50k/count_dpout_low_8> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clk_div_50k/count_dpout_high_8> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clk_div_50k/count_updown_7> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clk_div_50k/count_updown_6> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clk_div_50k/count_updown_5> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clk_div_50k/count_updown_4> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_29> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_28> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_27> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_26> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_25> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_24> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_23> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_22> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_21> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_20> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_19> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_18> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_17> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_16> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_15> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_14> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_13> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delay_50k_two/count_12> (without init value) has a constant value of 0 in block <top_view>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <clk_div_50k/count_updown_0> in Unit <top_view> is equivalent to the following 2 FFs/Latches, which will be removed : <delay_50k_two/count_0> <delay_50k/count_0> 
+INFO:Xst:2261 - The FF/Latch <delay_50k_two/count_1> in Unit <top_view> is equivalent to the following FF/Latch, which will be removed : <delay_50k/count_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_view, actual ratio is 8.
+INFO:Xst:2260 - The FF/Latch <blk00000107> in Unit <sin_cos_500K> is equivalent to the following FF/Latch : <blk00000161> 
+INFO:Xst:2260 - The FF/Latch <blk00000107> in Unit <sin_cos_1M> is equivalent to the following FF/Latch : <blk00000161> 
+INFO:Xst:2260 - The FF/Latch <blk00000107> in Unit <sin_cos_500K> is equivalent to the following FF/Latch : <blk00000161> 
+INFO:Xst:2260 - The FF/Latch <blk00000107> in Unit <sin_cos_1M> is equivalent to the following FF/Latch : <blk00000161> 
+FlipFlop clk_dpsk has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 96
+ Flip-Flops                                            : 96
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top_view.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 618
+#      GND                         : 6
+#      INV                         : 6
+#      LUT1                        : 20
+#      LUT2                        : 162
+#      LUT3                        : 50
+#      LUT4                        : 30
+#      LUT5                        : 23
+#      LUT6                        : 35
+#      MUXCY                       : 146
+#      MUXF7                       : 1
+#      VCC                         : 4
+#      XORCY                       : 135
+# FlipFlops/Latches                : 544
+#      FD                          : 284
+#      FDC                         : 77
+#      FDCE                        : 19
+#      FDE                         : 164
+# RAMS                             : 9
+#      RAMB16BWER                  : 6
+#      RAMB8BWER                   : 3
+# Shift Registers                  : 110
+#      SRLC16E                     : 110
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 37
+#      IBUF                        : 2
+#      OBUF                        : 35
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             543  out of  11440     4%  
+ Number of Slice LUTs:                  436  out of   5720     7%  
+    Number used as Logic:               326  out of   5720     5%  
+    Number used as Memory:              110  out of   1440     7%  
+       Number used as SRL:              110
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    673
+   Number with an unused Flip Flop:     130  out of    673    19%  
+   Number with an unused LUT:           237  out of    673    35%  
+   Number of fully used LUT-FF pairs:   306  out of    673    45%  
+   Number of unique control sets:        13
+
+IO Utilization: 
+ Number of IOs:                          61
+ Number of bonded IOBs:                  37  out of    186    19%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                8  out of     32    25%  
+    Number using Block RAM only:          8
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                   | Clock buffer(FF name)                                                                                                                      | Load  |
+---------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------+
+delay_50k_two/reg_clk50k                                       | NONE(clk_dpsk_last)                                                                                                                        | 1     |
+delay_50k/reg_clk50k                                           | NONE(clk_dpsk)                                                                                                                             | 2     |
+clk                                                            | IBUF+BUFG                                                                                                                                  | 650   |
+clk_div_50k/add_del_clkout(clk_div_50k/Mmux_add_del_clkout11:O)| NONE(*)(clk_div_50k/count_n_0)                                                                                                             | 10    |
+chirp_instance/uut/N1                                          | NONE(chirp_instance/uut/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)| 1     |
+---------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.952ns (Maximum Frequency: 201.935MHz)
+   Minimum input arrival time before clock: 4.325ns
+   Maximum output required time after clock: 3.900ns
+   Maximum combinational path delay: 4.675ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.952ns (frequency: 201.935MHz)
+  Total number of paths / destination ports: 5140 / 790
+-------------------------------------------------------------------------
+Delay:               4.952ns (Levels of Logic = 12)
+  Source:            clk_div_50k/count_dpout_low_0 (FF)
+  Destination:       clk_div_50k/locked (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: clk_div_50k/count_dpout_low_0 to clk_div_50k/locked
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             8   0.447   0.907  clk_div_50k/count_dpout_low_0 (clk_div_50k/count_dpout_low_0)
+     LUT2:I0->O            1   0.203   0.000  clk_div_50k/Msub_GND_3_o_GND_3_o_sub_19_OUT_lut<0> (clk_div_50k/Msub_GND_3_o_GND_3_o_sub_19_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  clk_div_50k/Msub_GND_3_o_GND_3_o_sub_19_OUT_cy<0> (clk_div_50k/Msub_GND_3_o_GND_3_o_sub_19_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  clk_div_50k/Msub_GND_3_o_GND_3_o_sub_19_OUT_cy<1> (clk_div_50k/Msub_GND_3_o_GND_3_o_sub_19_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  clk_div_50k/Msub_GND_3_o_GND_3_o_sub_19_OUT_cy<2> (clk_div_50k/Msub_GND_3_o_GND_3_o_sub_19_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  clk_div_50k/Msub_GND_3_o_GND_3_o_sub_19_OUT_cy<3> (clk_div_50k/Msub_GND_3_o_GND_3_o_sub_19_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  clk_div_50k/Msub_GND_3_o_GND_3_o_sub_19_OUT_cy<4> (clk_div_50k/Msub_GND_3_o_GND_3_o_sub_19_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  clk_div_50k/Msub_GND_3_o_GND_3_o_sub_19_OUT_cy<5> (clk_div_50k/Msub_GND_3_o_GND_3_o_sub_19_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  clk_div_50k/Msub_GND_3_o_GND_3_o_sub_19_OUT_cy<6> (clk_div_50k/Msub_GND_3_o_GND_3_o_sub_19_OUT_cy<6>)
+     XORCY:CI->O           1   0.180   0.808  clk_div_50k/Msub_GND_3_o_GND_3_o_sub_19_OUT_xor<7> (clk_div_50k/GND_3_o_GND_3_o_sub_19_OUT<7>)
+     LUT3:I0->O            1   0.205   0.827  clk_div_50k/GND_3_o_GND_3_o_OR_41_o4 (clk_div_50k/GND_3_o_GND_3_o_OR_41_o4)
+     LUT6:I2->O            1   0.203   0.580  clk_div_50k/GND_3_o_GND_3_o_OR_41_o5 (clk_div_50k/GND_3_o_GND_3_o_OR_41_o)
+     LUT5:I4->O            1   0.205   0.000  clk_div_50k/locked_rstpot (clk_div_50k/locked_rstpot)
+     FDC:D                     0.102          clk_div_50k/locked
+    ----------------------------------------
+    Total                      4.952ns (1.831ns logic, 3.121ns route)
+                                       (37.0% logic, 63.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_div_50k/add_del_clkout'
+  Clock period: 3.951ns (frequency: 253.097MHz)
+  Total number of paths / destination ports: 487 / 10
+-------------------------------------------------------------------------
+Delay:               3.951ns (Levels of Logic = 11)
+  Source:            clk_div_50k/count_n_5 (FF)
+  Destination:       clk_div_50k/count_n_8 (FF)
+  Source Clock:      clk_div_50k/add_del_clkout rising
+  Destination Clock: clk_div_50k/add_del_clkout rising
+
+  Data Path: clk_div_50k/count_n_5 to clk_div_50k/count_n_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.981  clk_div_50k/count_n_5 (clk_div_50k/count_n_5)
+     LUT6:I0->O           10   0.203   1.104  clk_div_50k/_n0169_inv11 (clk_div_50k/_n0169_inv1)
+     LUT4:I0->O            1   0.203   0.579  clk_div_50k/GND_3_o_GND_3_o_equal_40_o_inv1 (clk_div_50k/GND_3_o_GND_3_o_equal_40_o_inv)
+     MUXCY:CI->O           1   0.019   0.000  clk_div_50k/Mcount_count_n_cy<0> (clk_div_50k/Mcount_count_n_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  clk_div_50k/Mcount_count_n_cy<1> (clk_div_50k/Mcount_count_n_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  clk_div_50k/Mcount_count_n_cy<2> (clk_div_50k/Mcount_count_n_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  clk_div_50k/Mcount_count_n_cy<3> (clk_div_50k/Mcount_count_n_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  clk_div_50k/Mcount_count_n_cy<4> (clk_div_50k/Mcount_count_n_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  clk_div_50k/Mcount_count_n_cy<5> (clk_div_50k/Mcount_count_n_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  clk_div_50k/Mcount_count_n_cy<6> (clk_div_50k/Mcount_count_n_cy<6>)
+     MUXCY:CI->O           0   0.019   0.000  clk_div_50k/Mcount_count_n_cy<7> (clk_div_50k/Mcount_count_n_cy<7>)
+     XORCY:CI->O           1   0.180   0.000  clk_div_50k/Mcount_count_n_xor<8> (clk_div_50k/Mcount_count_n8)
+     FDC:D                     0.102          clk_div_50k/count_n_8
+    ----------------------------------------
+    Total                      3.951ns (1.287ns logic, 2.664ns route)
+                                       (32.6% logic, 67.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'delay_50k_two/reg_clk50k'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.325ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       clk_dpsk_last (FF)
+  Destination Clock: delay_50k_two/reg_clk50k rising
+
+  Data Path: rst_n to clk_dpsk_last
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O             96   0.206   1.850  clk_div_50k/RST_N_inv1_INV_0 (clk_div_50k/RST_N_inv)
+     FDC:CLR                   0.430          clk_dpsk_last
+    ----------------------------------------
+    Total                      4.325ns (1.858ns logic, 2.467ns route)
+                                       (43.0% logic, 57.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'delay_50k/reg_clk50k'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.325ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       clk_dpsk (FF)
+  Destination Clock: delay_50k/reg_clk50k rising
+
+  Data Path: rst_n to clk_dpsk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O             96   0.206   1.850  clk_div_50k/RST_N_inv1_INV_0 (clk_div_50k/RST_N_inv)
+     FDC:CLR                   0.430          clk_dpsk
+    ----------------------------------------
+    Total                      4.325ns (1.858ns logic, 2.467ns route)
+                                       (43.0% logic, 57.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 110 / 106
+-------------------------------------------------------------------------
+Offset:              4.325ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       clk_div_50k/count_dpout_low_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst_n to clk_div_50k/count_dpout_low_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O             96   0.206   1.850  clk_div_50k/RST_N_inv1_INV_0 (clk_div_50k/RST_N_inv)
+     FDCE:CLR                  0.430          clk_div_50k/count_dpout_low_0
+    ----------------------------------------
+    Total                      4.325ns (1.858ns logic, 2.467ns route)
+                                       (43.0% logic, 57.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_div_50k/add_del_clkout'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              4.325ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       clk_div_50k/count_n_0 (FF)
+  Destination Clock: clk_div_50k/add_del_clkout rising
+
+  Data Path: rst_n to clk_div_50k/count_n_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O             96   0.206   1.850  clk_div_50k/RST_N_inv1_INV_0 (clk_div_50k/RST_N_inv)
+     FDC:CLR                   0.430          clk_div_50k/count_n_0
+    ----------------------------------------
+    Total                      4.325ns (1.858ns logic, 2.467ns route)
+                                       (43.0% logic, 57.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 28 / 28
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            da_instance/reg_dadata1_13 (FF)
+  Destination:       da1data<13> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: da_instance/reg_dadata1_13 to da1data<13>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.447   0.579  da_instance/reg_dadata1_13 (da_instance/reg_dadata1_13)
+     OBUF:I->O                 2.571          da1data_13_OBUF (da1data<13>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'delay_50k/reg_clk50k'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            clk_dpsk_1 (FF)
+  Destination:       led0 (PAD)
+  Source Clock:      delay_50k/reg_clk50k rising
+
+  Data Path: clk_dpsk_1 to led0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.447   0.579  clk_dpsk_1 (clk_dpsk_1)
+     OBUF:I->O                 2.571          led0_OBUF (led0)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_div_50k/add_del_clkout'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.900ns (Levels of Logic = 1)
+  Source:            clk_div_50k/signal_out_temp (FF)
+  Destination:       ad1_clk (PAD)
+  Source Clock:      clk_div_50k/add_del_clkout rising
+
+  Data Path: clk_div_50k/signal_out_temp to ad1_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.447   0.882  clk_div_50k/signal_out_temp (clk_div_50k/signal_out_temp)
+     OBUF:I->O                 2.571          ad1_clk_OBUF (ad1_clk)
+    ----------------------------------------
+    Total                      3.900ns (3.018ns logic, 0.882ns route)
+                                       (77.4% logic, 22.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Delay:               4.675ns (Levels of Logic = 2)
+  Source:            clk (PAD)
+  Destination:       da1_clk (PAD)
+
+  Data Path: clk to da1_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.222   0.882  clk_IBUF (da2_wrt_OBUF)
+     OBUF:I->O                 2.571          da1_clk_OBUF (da1_clk)
+    ----------------------------------------
+    Total                      4.675ns (3.793ns logic, 0.882ns route)
+                                       (81.1% logic, 18.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+clk                       |    4.952|         |         |         |
+clk_div_50k/add_del_clkout|    3.326|         |         |         |
+--------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_div_50k/add_del_clkout
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+clk_div_50k/add_del_clkout|    3.951|         |         |         |
+--------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock delay_50k/reg_clk50k
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+clk_div_50k/add_del_clkout|    1.739|         |         |         |
+delay_50k_two/reg_clk50k  |    1.334|         |         |         |
+--------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock delay_50k_two/reg_clk50k
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+delay_50k/reg_clk50k|    1.128|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.18 secs
+ 
+--> 
+
+Total memory usage is 220080 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   74 (   0 filtered)
+Number of infos    :   15 (   0 filtered)
+

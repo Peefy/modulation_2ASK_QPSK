@@ -1,0 +1,15 @@
+# Output products list for <ip_sin_cos>
+_xmsgs\pn_parser.xmsgs
+ip_sin_cos.asy
+ip_sin_cos.gise
+ip_sin_cos.ngc
+ip_sin_cos.sym
+ip_sin_cos.v
+ip_sin_cos.veo
+ip_sin_cos.xco
+ip_sin_cos.xise
+ip_sin_cos\doc\dds_compiler_v4_0_vinfo.html
+ip_sin_cos\doc\dds_ds558.pdf
+ip_sin_cos_flist.txt
+ip_sin_cos_readme.txt
+ip_sin_cos_xmdf.tcl

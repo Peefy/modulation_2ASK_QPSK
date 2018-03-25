@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.ncd
+OUTFILE=E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\top_view.bit
+FAMILY=Spartan6
+PART=xc6slx9-3ftg256
+WORKINGDIR=E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

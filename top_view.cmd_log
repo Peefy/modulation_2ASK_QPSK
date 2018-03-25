@@ -1,0 +1,133 @@
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.config.ucf -p xc6slx9-ftg256-3 top_view.ngc top_view.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.config.ucf -p xc6slx9-ftg256-3 top_view.ngc top_view.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_view_map.ncd top_view.ngd top_view.pcf 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.config.ucf -p xc6slx9-ftg256-3 top_view.ngc top_view.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_view_map.ncd top_view.ngd top_view.pcf 
+par -w -intstyle ise -ol high -mt off top_view_map.ncd top_view.ncd top_view.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_view.twx top_view.ncd -o top_view.twr top_view.pcf -ucf pin.config.ucf 
+bitgen -intstyle ise -f top_view.ut top_view.ncd 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.config.ucf -p xc6slx9-ftg256-3 top_view.ngc top_view.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_view_map.ncd top_view.ngd top_view.pcf 
+par -w -intstyle ise -ol high -mt off top_view_map.ncd top_view.ncd top_view.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_view.twx top_view.ncd -o top_view.twr top_view.pcf -ucf pin.config.ucf 
+bitgen -intstyle ise -f top_view.ut top_view.ncd 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.config.ucf -p xc6slx9-ftg256-3 top_view.ngc top_view.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_view_map.ncd top_view.ngd top_view.pcf 
+par -w -intstyle ise -ol high -mt off top_view_map.ncd top_view.ncd top_view.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_view.twx top_view.ncd -o top_view.twr top_view.pcf -ucf pin.config.ucf 
+bitgen -intstyle ise -f top_view.ut top_view.ncd 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.config.ucf -p xc6slx9-ftg256-3 top_view.ngc top_view.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_view_map.ncd top_view.ngd top_view.pcf 
+par -w -intstyle ise -ol high -mt off top_view_map.ncd top_view.ncd top_view.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_view.twx top_view.ncd -o top_view.twr top_view.pcf -ucf pin.config.ucf 
+bitgen -intstyle ise -f top_view.ut top_view.ncd 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.config.ucf -p xc6slx9-ftg256-3 top_view.ngc top_view.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_view_map.ncd top_view.ngd top_view.pcf 
+par -w -intstyle ise -ol high -mt off top_view_map.ncd top_view.ncd top_view.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_view.twx top_view.ncd -o top_view.twr top_view.pcf -ucf pin.config.ucf 
+bitgen -intstyle ise -f top_view.ut top_view.ncd 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.config.ucf -p xc6slx9-ftg256-3 top_view.ngc top_view.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_view_map.ncd top_view.ngd top_view.pcf 
+par -w -intstyle ise -ol high -mt off top_view_map.ncd top_view.ncd top_view.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_view.twx top_view.ncd -o top_view.twr top_view.pcf -ucf pin.config.ucf 
+bitgen -intstyle ise -f top_view.ut top_view.ncd 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.config.ucf -p xc6slx9-ftg256-3 top_view.ngc top_view.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_view_map.ncd top_view.ngd top_view.pcf 
+par -w -intstyle ise -ol high -mt off top_view_map.ncd top_view.ncd top_view.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_view.twx top_view.ncd -o top_view.twr top_view.pcf -ucf pin.config.ucf 
+bitgen -intstyle ise -f top_view.ut top_view.ncd 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.config.ucf -p xc6slx9-ftg256-3 top_view.ngc top_view.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_view_map.ncd top_view.ngd top_view.pcf 
+par -w -intstyle ise -ol high -mt off top_view_map.ncd top_view.ncd top_view.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_view.twx top_view.ncd -o top_view.twr top_view.pcf -ucf pin.config.ucf 
+bitgen -intstyle ise -f top_view.ut top_view.ncd 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.config.ucf -p xc6slx9-ftg256-3 top_view.ngc top_view.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_view_map.ncd top_view.ngd top_view.pcf 
+par -w -intstyle ise -ol high -mt off top_view_map.ncd top_view.ncd top_view.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_view.twx top_view.ncd -o top_view.twr top_view.pcf -ucf pin.config.ucf 
+bitgen -intstyle ise -f top_view.ut top_view.ncd 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.config.ucf -p xc6slx9-ftg256-3 top_view.ngc top_view.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_view_map.ncd top_view.ngd top_view.pcf 
+par -w -intstyle ise -ol high -mt off top_view_map.ncd top_view.ncd top_view.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_view.twx top_view.ncd -o top_view.twr top_view.pcf -ucf pin.config.ucf 
+bitgen -intstyle ise -f top_view.ut top_view.ncd 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.config.ucf -p xc6slx9-ftg256-3 top_view.ngc top_view.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_view_map.ncd top_view.ngd top_view.pcf 
+par -w -intstyle ise -ol high -mt off top_view_map.ncd top_view.ncd top_view.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_view.twx top_view.ncd -o top_view.twr top_view.pcf -ucf pin.config.ucf 
+bitgen -intstyle ise -f top_view.ut top_view.ncd 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.config.ucf -p xc6slx9-ftg256-3 top_view.ngc top_view.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_view_map.ncd top_view.ngd top_view.pcf 
+par -w -intstyle ise -ol high -mt off top_view_map.ncd top_view.ncd top_view.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_view.twx top_view.ncd -o top_view.twr top_view.pcf -ucf pin.config.ucf 
+bitgen -intstyle ise -f top_view.ut top_view.ncd 
+xst -intstyle ise -ifn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.xst" -ofn "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.config.ucf -p xc6slx9-ftg256-3 top_view.ngc top_view.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_view_map.ncd top_view.ngd top_view.pcf 
+par -w -intstyle ise -ol high -mt off top_view_map.ncd top_view.ncd top_view.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_view.twx top_view.ncd -o top_view.twr top_view.pcf -ucf pin.config.ucf 
+bitgen -intstyle ise -f top_view.ut top_view.ncd 

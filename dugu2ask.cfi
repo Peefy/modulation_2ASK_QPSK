@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            01/19/2018 - 15:39
+SOURCE          E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\dugu2ask.mcs
+DEVICE          2048K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x1ACBDEC2
+START_ADDRESS   0x00000000 END_ADDRESS 0x000534A7 DIRECTION_UP   "E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.bit" 6slx9ftg256

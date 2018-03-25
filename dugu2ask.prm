@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\//dugu2ask -s 2048 -u 0000 E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.bit -spi 
+
+PROM E:\_FPGA_CPLD_Pros\Xilinx\Spartan6\dugu_2ASK\dugu2ask.prm map: Fri Jan 19 15:39:43 2018
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          2048K
+PROM start    0000:0000
+PROM end      001f:ffff
+PROM checksum 1acbdec2
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:34a7     Jan 18 21:11:59 2018 E:/_FPGA_CPLD_Pros/Xilinx/Spartan6/dugu_2ASK/top_view.bit

@@ -1,0 +1,143 @@
+# Reading E:/ModelSim/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# do {top_view_test.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 22:43:26 on Nov 04,2017
+# vlog -reportprogress 300 ipcore_dir/ip_sin_cos.v 
+# -- Compiling module ip_sin_cos
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	ip_sin_cos
+# 	glbl
+# End time: 22:43:26 on Nov 04,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 22:43:26 on Nov 04,2017
+# vlog -reportprogress 300 delay_clk_div_50k.v 
+# -- Compiling module delay_clk_div_50k
+# 
+# Top level modules:
+# 	delay_clk_div_50k
+# End time: 22:43:26 on Nov 04,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 22:43:26 on Nov 04,2017
+# vlog -reportprogress 300 da.v 
+# -- Compiling module da
+# 
+# Top level modules:
+# 	da
+# End time: 22:43:26 on Nov 04,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 22:43:26 on Nov 04,2017
+# vlog -reportprogress 300 ClkSpliterN.v 
+# -- Compiling module ClkSpliterN
+# 
+# Top level modules:
+# 	ClkSpliterN
+# End time: 22:43:26 on Nov 04,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 22:43:26 on Nov 04,2017
+# vlog -reportprogress 300 ad.v 
+# -- Compiling module ad
+# 
+# Top level modules:
+# 	ad
+# End time: 22:43:26 on Nov 04,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 22:43:26 on Nov 04,2017
+# vlog -reportprogress 300 top_view.v 
+# -- Compiling module top_view
+# 
+# Top level modules:
+# 	top_view
+# End time: 22:43:26 on Nov 04,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 22:43:27 on Nov 04,2017
+# vlog -reportprogress 300 top_view_test.v 
+# -- Compiling module top_view_test
+# 
+# Top level modules:
+# 	top_view_test
+# End time: 22:43:27 on Nov 04,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 22:43:27 on Nov 04,2017
+# vlog -reportprogress 300 E:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 22:43:27 on Nov 04,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui -do "do {top_view_test.fdo}" 
+# Start time: 22:43:27 on Nov 04,2017
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.top_view_test
+# Loading work.top_view
+# Loading work.ClkSpliterN
+# Loading work.ip_sin_cos
+# Loading unisims_ver.VCC
+# Loading unisims_ver.GND
+# Loading unisims_ver.FDE
+# Loading unisims_ver.FD
+# Loading unisims_ver.XORCY
+# Loading unisims_ver.MUXCY
+# Loading unisims_ver.LUT2
+# Loading unisims_ver.LUT3
+# Loading unisims_ver.LUT4
+# Loading unisims_ver.LUT5
+# Loading unisims_ver.LUT6
+# Loading unisims_ver.LUT1
+# Loading unisims_ver.RAMB8BWER
+# Loading unisims_ver.RAMB16BWER
+# Loading unisims_ver.SRLC16E
+# Loading work.delay_clk_div_50k
+# Loading work.da
+# Loading work.ad
+# Loading work.glbl
+# ** Warning: (vsim-3015) top_view.v(80): [PCDPC] - Port size (16) does not match connection size (32) for port 'SPLITER_N'. The port definition is at: ClkSpliterN.v(24).
+#    Time: 0 ps  Iteration: 0  Instance: /top_view_test/uut/clk_div_50k File: ClkSpliterN.v
+# ** Warning: (vsim-3015) top_view.v(89): [PCDPC] - Port size (27) does not match connection size (29) for port 'data'. The port definition is at: ipcore_dir/ip_sin_cos.v(37).
+#    Time: 0 ps  Iteration: 0  Instance: /top_view_test/uut/sin_cos_1M File: ipcore_dir/ip_sin_cos.v
+# ** Warning: (vsim-3015) top_view.v(99): [PCDPC] - Port size (27) does not match connection size (29) for port 'data'. The port definition is at: ipcore_dir/ip_sin_cos.v(37).
+#    Time: 0 ps  Iteration: 0  Instance: /top_view_test/uut/sin_cos_500K File: ipcore_dir/ip_sin_cos.v
+# ** Warning: (vsim-3015) top_view.v(133): [PCDPC] - Port size (30) does not match connection size (32) for port 'delay'. The port definition is at: delay_clk_div_50k.v(25).
+#    Time: 0 ps  Iteration: 0  Instance: /top_view_test/uut/delay_50k File: delay_clk_div_50k.v
+# ** Warning: (vsim-3015) top_view.v(140): [PCDPC] - Port size (30) does not match connection size (32) for port 'delay'. The port definition is at: delay_clk_div_50k.v(25).
+#    Time: 0 ps  Iteration: 0  Instance: /top_view_test/uut/delay_50k_two File: delay_clk_div_50k.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Administrator  Hostname: 0526-20170401CT  ProcessID: 5916
+# 
+#           Attempting to use alternate WLF file "./wlft2dwtfw".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft2dwtfw
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# End time: 22:44:15 on Nov 04,2017, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 8

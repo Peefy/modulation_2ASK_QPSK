@@ -1,0 +1,22 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Fri Jan 19 17:14:23 2018
+
+drc -z top_view.ncd top_view.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net clk_div_50k/add_del_clkout
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net delay_50k_two/reg_clk50k is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net delay_50k/reg_clk50k is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+DRC detected 0 errors and 4 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
